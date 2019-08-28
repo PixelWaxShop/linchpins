@@ -1,0 +1,80 @@
+.landing--header {
+    max-width: 102.4rem;
+    margin: 0 auto;
+    padding: 6.4rem;
+}
+
+.landing--more {
+    max-width: 102.4rem;
+    margin: 0 auto;
+    padding: 5.5rem 0 0 10rem;
+    .logo-img-wrapper {
+        margin-top: 12rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .logo-wrapper {
+        display: flex;
+        position: absolute;
+        justify-content: space-between;
+        width: 52rem;
+        margin: 0 auto;
+        align-items: baseline;
+    }
+}
+
+.landing--sauce {
+    max-width: 102.4rem;
+    margin: 0 auto;
+    padding: 18rem 0 0 10rem;
+}
+
+.full-width-img {
+    max-width: 102.4rem;
+    margin: 0 auto;
+    .logo-img-wrapper {
+        margin-top: 12rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .logo-wrapper {
+        display: flex;
+        position: absolute;
+        justify-content: space-between;
+        width: 52rem;
+        margin: 0 auto;
+        align-items: baseline;
+    }
+}
+
+.landing--what {
+    max-width: 102.4rem;
+    margin: 0 auto;
+    padding: 15rem 20rem 0 23rem;
+}
+
+.landing--airbnb {
+    max-width: 102.4rem;
+    margin: 0 auto;
+}
+
+.landing--accelerate {
+    max-width: 102.4rem;
+    margin: 0 auto;
+    padding: 23rem 16rem 0 16rem;
+    .cube-bg {
+        width: 76.2rem;
+        height: 45rem;
+        background-color: #fb484f;
+        margin: 0 auto;
+        position: relative;
+    }
+}
+
+.landing--building {
+    max-width: 102.4rem;
+    margin: 0 auto;
+    padding: 14rem 15rem 0 15rem;
+}

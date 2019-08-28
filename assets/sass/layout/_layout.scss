@@ -1,0 +1,39 @@
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: $font_primary;
+    font-size: 1.6rem;
+    line-height: 1.4;
+    color: $main_text;
+    background-color: #FFFFFF;
+}
+
+input,
+textarea {
+    @include placeholder($gray_hsl70);
+}
+
+a {
+    text-decoration: none;
+}
+
+.red-line {
+    width: 5rem;
+    height: 0.2rem;
+    background-color: #ff001f;
+}
+
+.red-line-small {
+    width: 3.5rem;
+    height: 0.2rem;
+    background-color: #ff001f;
+}

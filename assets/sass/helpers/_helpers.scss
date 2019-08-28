@@ -1,0 +1,206 @@
+.clearfix {
+    @include clearfix();
+}
+
+.main-title {
+    color: #000000;
+    font-family: Martel;
+    font-size: 3.6rem;
+    font-weight: 300;
+}
+
+.main-subtitle {
+    color: #000000;
+    font-family: Martel;
+    font-size: 1.6rem;
+}
+
+.big-title {
+    font-family: Martel;
+    font-size: 4.6rem;
+    font-weight: 600;
+    color: #000000;
+}
+
+.main-heading {
+    font-family: 'DM Serif Display';
+    font-size: 4.5rem;
+    color: #000000;
+}
+
+.pre-title {
+    font-family: Martel;
+    font-size: 1.8rem;
+    font-weight: 200;
+    color: #000000;
+}
+
+.accent-red {
+    font-family: 'DM Serif Display';
+    font-size: 3.9rem;
+    font-weight: normal;
+    color: #ff001f;
+    text-transform: uppercase;
+}
+
+.accent-black {
+    font-family: 'Lexend Deca';
+    font-size: 2rem;
+    font-weight: normal;
+    color: #000000;
+}
+
+.txt-column-small {
+    font-family: Martel;
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: #000000;
+    line-height: 3rem;
+}
+
+.txt-column-big {
+    font-family: Martel;
+    font-size: 2rem;
+    font-weight: 300;
+    line-height: 3.5rem;
+    color: #000000;
+    .txt-red {
+        font-family: 'DM Serif Display';
+        font-weight: normal;
+        color: #ff001f;
+    }
+}
+
+.txt-paragraph-small {
+    font-family: Martel;
+    font-size: 1.6rem;
+    font-weight: 300;
+    line-height: 3rem;
+    color: #000000;
+    .txt-bold {
+        font-weight: 800;
+    }
+}
+
+.txt-paragraph-big {
+    font-family: Martel;
+    font-size: 1.8rem;
+    font-weight: 200;
+    line-height: 3.5rem;
+    color: #000000;
+    .txt-bold {
+        font-weight: 900;
+    }
+}
+
+// text
+.txt-green {
+    color: #458278;
+    font-weight: 700;
+}
+
+.txt-blue {
+    color: #595ca9;
+    font-weight: 700;
+}
+
+//text decoration
+.txt-uppercase {
+    text-transform: uppercase;
+}
+
+// font weight
+.txtLight {
+    font-weight: 200;
+}
+
+.txtRegular {
+    font-weight: 400;
+}
+
+.txtLightBold {
+    font-weight: 700;
+}
+
+.txtSemiBold {
+    font-weight: 800;
+}
+
+.txtBold {
+    font-weight: 900;
+}
+
+// font size
+.txt14 {
+    font-size: 1.4rem;
+}
+
+.txt16 {
+    font-size: 1.6rem;
+}
+
+.txt20 {
+    font-size: 2rem;
+}
+
+// margin
+.mt--2 {
+    margin-top: -2rem;
+}
+
+.mt-2 {
+    margin-top: 2rem;
+}
+
+.mt-3 {
+    margin-top: 3rem;
+}
+
+.mt-4 {
+    margin-top: 40px;
+}
+
+.mb-2 {
+    margin-bottom: 2rem;
+}
+
+.mb-4 {
+    margin-bottom: 40px;
+}
+
+.mb-8 {
+    margin-bottom: 80px;
+}
+
+.ml-2 {
+    margin-left: 2rem;
+}
+
+.mr-2 {
+    margin-right: 2rem;
+}
+
+.mr-4 {
+    margin-right: 4rem;
+}
+
+.mr-0-8 {
+    margin-right: 0.8rem;
+}
+
+.ml-0-8 {
+    margin-left: 0.8rem;
+}
+
+// line height 
+.lh-3 {
+    line-height: 3rem;
+}
+
+.lh-3-5 {
+    line-height: 3.5rem;
+}
+
+.lh-4 {
+    line-height: 4rem;
+}
