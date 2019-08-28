@@ -509,6 +509,9 @@ template {
   font-size: 3.6rem;
   font-weight: 300;
 }
+.main-title .txt-bold {
+  font-weight: 800;
+}
 
 .main-subtitle {
   color: #000000;
@@ -526,6 +529,12 @@ template {
 .main-heading {
   font-family: "DM Serif Display";
   font-size: 4.5rem;
+  color: #000000;
+}
+
+.mid-heading {
+  font-family: "DM Serif Display";
+  font-size: 3.5rem;
   color: #000000;
 }
 
@@ -583,6 +592,14 @@ template {
   font-weight: 800;
 }
 
+.txt-paragraph-mid {
+  font-family: Martel;
+  font-size: 1.7rem;
+  font-weight: 300;
+  line-height: 3.5rem;
+  color: #000000;
+}
+
 .txt-paragraph-big {
   font-family: Martel;
   font-size: 1.8rem;
@@ -592,6 +609,20 @@ template {
 }
 .txt-paragraph-big .txt-bold {
   font-weight: 900;
+}
+
+.footer-title {
+  font-family: Martel;
+  font-size: 4.4rem;
+  color: #ffffff;
+}
+
+.footer-subtitle {
+  opacity: 0.47;
+  font-family: Martel;
+  font-size: 3.4rem;
+  font-weight: 200;
+  color: #ffffff;
 }
 
 .txt-green {
@@ -700,31 +731,6 @@ template {
   line-height: 4rem;
 }
 
-.btn-oval-blue {
-  white-space: nowrap;
-  cursor: pointer;
-  border: none;
-  display: inline-block;
-  border-radius: 22px;
-  background-color: #595ca9;
-  padding: 12px 40px;
-  color: #ffffff;
-  font-family: "IBM Plex Sans";
-  font-size: 14px;
-  font-weight: 500;
-}
-.btn-oval-blue:focus {
-  outline: none;
-}
-.btn-oval-blue:hover {
-  box-shadow: 0 4px 10px rgba(89, 92, 169, 0.4);
-  background-color: #41449a;
-}
-.btn-oval-blue:active {
-  color: #cdcee5;
-  box-shadow: 0 2px 6px rgba(89, 92, 169, 0.5);
-}
-
 .btn-oval-red {
   border-radius: 26.5px;
   background: #f7233c url("../images/icon-arrow-white.svg") no-repeat right 2rem center;
@@ -751,32 +757,16 @@ template {
   background-color: #cf0000;
 }
 
-.btn-oval-green {
+.footer-btn {
+  border: none;
+  background: transparent;
   white-space: nowrap;
   cursor: pointer;
-  border: none;
-  border-radius: 25px;
-  background-color: #2F8378;
-  padding: 13px 44px;
+  opacity: 0.11;
+  font-family: "Lexend Deca";
+  font-size: 2.9rem;
   color: #ffffff;
-  font-family: "IBM Plex Sans";
-  font-size: 16px;
-  font-weight: 700;
-  border: none;
-  white-space: nowrap;
-}
-.btn-oval-green:focus {
-  outline: none;
-}
-
-.btn-play-blue-white {
-  position: absolute;
-  border-radius: 50%;
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
-  cursor: pointer;
-}
-.btn-play-blue-white:hover {
-  box-shadow: 0 8px 22px 0 rgba(28, 31, 30, 0.3);
+  align-self: flex-end;
 }
 
 :root {
@@ -2512,6 +2502,53 @@ a {
   width: 3.5rem;
   height: 0.2rem;
   background-color: #ff001f;
+}
+
+.black-line {
+  width: 5rem;
+  height: 0.2rem;
+  background-color: #000000;
+}
+
+.black-line-small {
+  width: 3.5rem;
+  height: 0.2rem;
+  background-color: #000000;
+}
+
+.footer {
+  background-color: #121213;
+}
+.footer .footer-container {
+  max-width: 102.4rem;
+  margin: 0 auto;
+  padding: 16rem 0 0 15rem;
+  display: flex;
+  flex-direction: column;
+}
+.footer .footer-input {
+  background-color: #121213;
+  width: 100%;
+  border: none;
+  font-family: Martel;
+  font-size: 2.3rem;
+  font-weight: 200;
+  padding: 3rem 0;
+  outline: none;
+  caret-color: #ffffff;
+  border-bottom: 1px solid #282828;
+}
+.footer .footer-input::placeholder {
+  font-family: Martel;
+  font-size: 2.3rem;
+  font-weight: 200;
+  color: rgba(255, 255, 255, 0.44);
+}
+.footer .logo-footer {
+  font-family: "Lexend Deca";
+  font-size: 1.7rem;
+  font-weight: bold;
+  color: #ffffff;
 }
 
 .landing--header {

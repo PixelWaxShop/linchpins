@@ -37,3 +37,50 @@ a {
     height: 0.2rem;
     background-color: #ff001f;
 }
+
+.black-line {
+    width: 5rem;
+    height: 0.2rem;
+    background-color: #000000;
+}
+
+.black-line-small {
+    width: 3.5rem;
+    height: 0.2rem;
+    background-color: #000000;
+}
+
+.footer {
+    background-color: #121213;
+    .footer-container {
+        max-width: 102.4rem;
+        margin: 0 auto;
+        padding: 16rem 0 0 15rem;
+        display: flex;
+        flex-direction: column;
+    }
+    .footer-input {
+        background-color: #121213;
+        width: 100%;
+        border: none;
+        font-family: Martel;
+        font-size: 2.3rem;
+        font-weight: 200;
+        padding: 3rem 0;
+        outline: none;
+        caret-color: #ffffff;
+        border-bottom: 1px solid #282828;
+        &::placeholder {
+            font-family: Martel;
+            font-size: 2.3rem;
+            font-weight: 200;
+            color: rgba(255, 255, 255, 0.44);
+        }
+    }
+    .logo-footer {
+        font-family: 'Lexend Deca';
+        font-size: 1.7rem;
+        font-weight: bold;
+        color: #ffffff;
+    }
+}

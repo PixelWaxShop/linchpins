@@ -7,6 +7,9 @@
     font-family: Martel;
     font-size: 3.6rem;
     font-weight: 300;
+    .txt-bold {
+        font-weight: 800;
+    }
 }
 
 .main-subtitle {
@@ -25,6 +28,12 @@
 .main-heading {
     font-family: 'DM Serif Display';
     font-size: 4.5rem;
+    color: #000000;
+}
+
+.mid-heading {
+    font-family: 'DM Serif Display';
+    font-size: 3.5rem;
     color: #000000;
 }
 
@@ -82,6 +91,14 @@
     }
 }
 
+.txt-paragraph-mid {
+    font-family: Martel;
+    font-size: 1.7rem;
+    font-weight: 300;
+    line-height: 3.5rem;
+    color: #000000;
+}
+
 .txt-paragraph-big {
     font-family: Martel;
     font-size: 1.8rem;
@@ -91,6 +108,20 @@
     .txt-bold {
         font-weight: 900;
     }
+}
+
+.footer-title {
+    font-family: Martel;
+    font-size: 4.4rem;
+    color: #ffffff;
+}
+
+.footer-subtitle {
+    opacity: 0.47;
+    font-family: Martel;
+    font-size: 3.4rem;
+    font-weight: 200;
+    color: #ffffff;
 }
 
 // text
