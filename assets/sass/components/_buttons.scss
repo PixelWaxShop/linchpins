@@ -34,4 +34,10 @@
     font-size: 2.9rem;
     color: #ffffff;
     align-self: flex-end;
+    &:focus {
+        outline: none;
+    }
+    &:hover {
+        opacity: 1;
+    }
 }

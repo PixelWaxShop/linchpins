@@ -768,6 +768,12 @@ template {
   color: #ffffff;
   align-self: flex-end;
 }
+.footer-btn:focus {
+  outline: none;
+}
+.footer-btn:hover {
+  opacity: 1;
+}
 
 :root {
   --reflex-columns: 12;
@@ -2536,6 +2542,7 @@ a {
   padding: 3rem 0;
   outline: none;
   caret-color: #ffffff;
+  color: #ffffff;
   border-bottom: 1px solid #282828;
 }
 .footer .footer-input::placeholder {
