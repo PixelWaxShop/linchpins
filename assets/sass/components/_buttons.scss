@@ -24,6 +24,23 @@
     }
 }
 
+.btn-oval-white {
+    border-radius: 26.5px;
+    background: #ffffff url("../images/icon-arrow-red.svg") no-repeat right 2rem center;
+    white-space: nowrap;
+    cursor: pointer;
+    border: none;
+    padding: 1.3rem 5.2rem 1.3rem 2.6rem;
+    color: #ff3b3a;
+    font-family: 'Lexend Deca';
+    font-size: 1.5rem;
+    font-weight: bold;
+    white-space: nowrap;
+    &:focus {
+        outline: none;
+    }
+}
+
 .footer-btn {
     border: none;
     background: transparent;

@@ -56,8 +56,16 @@
 }
 
 .landing--airbnb {
-    max-width: 102.4rem;
-    margin: 0 auto;
+    //max-width: 102.4rem;
+    //margin: 0 auto;
+    display: flex;
+    .txt-paragraph-airbnb {
+        max-width: 40rem;
+        font-family: 'Lexend Deca';
+        font-size: 1.7rem;
+        color: #ffffff;
+        line-height: 3rem;
+    }
 }
 
 .landing--accelerate {
@@ -77,4 +85,34 @@
     max-width: 102.4rem;
     margin: 0 auto;
     padding: 14rem 15rem 0 15rem;
+    .CEO-wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-top: 6rem;
+        .dorota-wrapper {
+            margin-top: 22rem;
+        }
+        .CEO-img-wrapper {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+        }
+        .CEO-title-wrapper {
+            position: absolute;
+            padding-left: 3.5rem;
+            padding-bottom: 3.5rem;
+        }
+        .CEO-name {
+            font-family: BaforaDemo;
+            font-size: 3.1rem;
+            color: #ffffff;
+        }
+        .CEO-title {
+            opacity: 0.77;
+            font-family: 'Lexend Deca';
+            font-size: 1.7rem;
+            color: #ffffff;
+        }
+    }
 }

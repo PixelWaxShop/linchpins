@@ -6,6 +6,10 @@ body {
   font-family: Martel;
 }
 
+@font-face {
+  font-family: "BaforaDemo";
+  src: url("../fonts/Bafora Regular Demo.otf");
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -755,6 +759,23 @@ template {
   color: #f1b2b2;
   box-shadow: 0 2px 6px rgba(229, 0, 0, 0.5);
   background-color: #cf0000;
+}
+
+.btn-oval-white {
+  border-radius: 26.5px;
+  background: #ffffff url("../images/icon-arrow-red.svg") no-repeat right 2rem center;
+  white-space: nowrap;
+  cursor: pointer;
+  border: none;
+  padding: 1.3rem 5.2rem 1.3rem 2.6rem;
+  color: #ff3b3a;
+  font-family: "Lexend Deca";
+  font-size: 1.5rem;
+  font-weight: bold;
+  white-space: nowrap;
+}
+.btn-oval-white:focus {
+  outline: none;
 }
 
 .footer-btn {
@@ -2616,8 +2637,14 @@ a {
 }
 
 .landing--airbnb {
-  max-width: 102.4rem;
-  margin: 0 auto;
+  display: flex;
+}
+.landing--airbnb .txt-paragraph-airbnb {
+  max-width: 40rem;
+  font-family: "Lexend Deca";
+  font-size: 1.7rem;
+  color: #ffffff;
+  line-height: 3rem;
 }
 
 .landing--accelerate {
@@ -2637,6 +2664,36 @@ a {
   max-width: 102.4rem;
   margin: 0 auto;
   padding: 14rem 15rem 0 15rem;
+}
+.landing--building .CEO-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 6rem;
+}
+.landing--building .CEO-wrapper .dorota-wrapper {
+  margin-top: 22rem;
+}
+.landing--building .CEO-wrapper .CEO-img-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.landing--building .CEO-wrapper .CEO-title-wrapper {
+  position: absolute;
+  padding-left: 3.5rem;
+  padding-bottom: 3.5rem;
+}
+.landing--building .CEO-wrapper .CEO-name {
+  font-family: BaforaDemo;
+  font-size: 3.1rem;
+  color: #ffffff;
+}
+.landing--building .CEO-wrapper .CEO-title {
+  opacity: 0.77;
+  font-family: "Lexend Deca";
+  font-size: 1.7rem;
+  color: #ffffff;
 }
 
 /*# sourceMappingURL=styles.css.map */
