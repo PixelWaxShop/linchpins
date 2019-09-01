@@ -735,6 +735,87 @@ template {
   line-height: 4rem;
 }
 
+@media (min-width: 1024px) {
+  .main-title {
+    font-size: 4rem;
+  }
+
+  .main-subtitle {
+    font-size: 2rem;
+  }
+
+  .big-title {
+    font-size: 5rem;
+  }
+
+  .main-heading {
+    font-size: 5rem;
+  }
+
+  .mid-heading {
+    font-size: 4rem;
+  }
+
+  .pre-title {
+    font-size: 2rem;
+  }
+
+  .accent-red {
+    font-size: 4.3rem;
+  }
+
+  .accent-black {
+    font-size: 2rem;
+  }
+
+  .txt-column-small {
+    font-size: 2rem;
+    line-height: 3.5rem;
+  }
+
+  .txt-column-big {
+    font-size: 2rem;
+    line-height: 4rem;
+  }
+
+  .txt-paragraph-small {
+    font-size: 2rem;
+    line-height: 3.5rem;
+  }
+
+  .txt-paragraph-mid {
+    font-size: 2.3rem;
+    line-height: 4rem;
+  }
+
+  .txt-paragraph-big {
+    font-size: 2.2rem;
+    line-height: 4rem;
+  }
+
+  .footer-title {
+    font-size: 5rem;
+  }
+
+  .footer-subtitle {
+    font-size: 4rem;
+  }
+}
+@media (max-width: 880px) {
+  .main-title {
+    font-size: 2.5rem;
+    text-align: center;
+  }
+
+  .accent-red {
+    font-size: 2.8rem;
+  }
+
+  .main-subtitle {
+    font-size: 1.4rem;
+    text-align: center;
+  }
+}
 .btn-oval-red {
   border-radius: 26.5px;
   background: #f7233c url("../images/icon-arrow-white.svg") no-repeat right 2rem center;
@@ -2547,11 +2628,13 @@ a {
   background-color: #121213;
 }
 .footer .footer-container {
-  max-width: 102.4rem;
+  max-width: 110.4rem;
+  width: 100%;
   margin: 0 auto;
-  padding: 16rem 0 0 15rem;
+  /* padding: 16rem 0 0 15rem; */
   display: flex;
   flex-direction: column;
+  padding: 0 4rem;
 }
 .footer .footer-input {
   background-color: #121213;
@@ -2580,23 +2663,28 @@ a {
 }
 
 .landing--header {
-  max-width: 102.4rem;
-  margin: 0 auto;
   padding: 6.4rem;
 }
 
 .landing--more {
-  max-width: 102.4rem;
-  margin: 0 auto;
   padding: 5.5rem 0 0 10rem;
 }
-.landing--more .logo-img-wrapper {
+.landing--more .gda-wrapper {
+  display: flex;
+}
+.landing--more .gda-wrapper .logo-img-wrapper {
   margin-top: 12rem;
+  background: transparent url("../images/red-image-hero-big.png") no-repeat center;
+  height: 45rem;
   display: flex;
   justify-content: center;
   align-items: center;
+  max-width: 150rem;
+  margin-right: 16rem;
+  background-size: cover;
+  width: 100%;
 }
-.landing--more .logo-wrapper {
+.landing--more .gda-wrapper .logo-wrapper {
   display: flex;
   position: absolute;
   justify-content: space-between;
@@ -2606,28 +2694,30 @@ a {
 }
 
 .landing--sauce {
-  max-width: 102.4rem;
-  margin: 0 auto;
   padding: 18rem 0 0 10rem;
 }
 
 .full-width-img {
-  max-width: 102.4rem;
-  margin: 0 auto;
+  background: transparent url("../images/full-image.png") no-repeat center;
+  width: 100%;
+  height: 45rem;
+  background-size: cover;
+  margin-top: 12rem;
 }
 .full-width-img .logo-img-wrapper {
-  margin-top: 12rem;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  height: 45rem;
 }
 .full-width-img .logo-wrapper {
   display: flex;
-  position: absolute;
-  justify-content: space-between;
-  width: 52rem;
+  justify-content: space-around;
+  width: 100%;
   margin: 0 auto;
   align-items: baseline;
+  position: absolute;
 }
 
 .landing--what {
@@ -2652,9 +2742,10 @@ a {
   margin: 0 auto;
   padding: 23rem 16rem 0 16rem;
 }
-.landing--accelerate .cube-bg {
-  width: 76.2rem;
-  height: 45rem;
+
+.cube-bg {
+  width: 100%;
+  height: 50rem;
   background-color: #fb484f;
   margin: 0 auto;
   position: relative;
@@ -2665,35 +2756,69 @@ a {
   margin: 0 auto;
   padding: 14rem 15rem 0 15rem;
 }
-.landing--building .CEO-wrapper {
+
+.CEO-wrapper {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
   margin-top: 6rem;
 }
-.landing--building .CEO-wrapper .dorota-wrapper {
+.CEO-wrapper .dorota-wrapper {
   margin-top: 22rem;
 }
-.landing--building .CEO-wrapper .CEO-img-wrapper {
+.CEO-wrapper .CEO-img-wrapper {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
 }
-.landing--building .CEO-wrapper .CEO-title-wrapper {
+.CEO-wrapper .CEO-title-wrapper {
   position: absolute;
   padding-left: 3.5rem;
   padding-bottom: 3.5rem;
 }
-.landing--building .CEO-wrapper .CEO-name {
+.CEO-wrapper .CEO-name {
   font-family: "BaforaDemo";
   font-size: 3.1rem;
   color: #ffffff;
 }
-.landing--building .CEO-wrapper .CEO-title {
+.CEO-wrapper .CEO-title {
   opacity: 0.77;
   font-family: "Lexend Deca";
   font-size: 1.7rem;
   color: #ffffff;
+}
+
+@media (max-width: 880px) {
+  .landing--header {
+    display: flex;
+    justify-content: center;
+    padding: 5rem;
+  }
+
+  .landing--more {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .landing--more .gda-wrapper {
+    display: flex;
+  }
+  .landing--more .gda-wrapper .logo-img-wrapper {
+    height: 34rem;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    width: 100vw;
+    margin: 0;
+    margin-top: 6rem;
+  }
+  .landing--more .gda-wrapper .logo-wrapper {
+    flex-direction: column;
+    width: unset;
+    height: 16rem;
+    align-items: center;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

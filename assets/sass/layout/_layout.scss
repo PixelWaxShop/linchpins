@@ -53,11 +53,13 @@ a {
 .footer {
     background-color: #121213;
     .footer-container {
-        max-width: 102.4rem;
+        max-width: 110.4rem;
+        width: 100%;
         margin: 0 auto;
-        padding: 16rem 0 0 15rem;
+        /* padding: 16rem 0 0 15rem; */
         display: flex;
         flex-direction: column;
+        padding: 0 4rem;
     }
     .footer-input {
         background-color: #121213;
