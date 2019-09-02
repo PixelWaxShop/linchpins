@@ -31,6 +31,10 @@
             align-items: baseline;
         }
     }
+
+    .more-line {
+        display: none;
+    }
 }
 
 .landing--sauce {
@@ -353,6 +357,17 @@
                 align-items: center;
             }
         }
+
+        .more-line {
+            display: inline-block;
+            width: 2.5rem;
+            height: 0.1rem;
+            margin: 2.5rem 0;
+        }
+
+        .more-title {
+            text-align: center;
+        } 
     }
 
     .landing--sauce {

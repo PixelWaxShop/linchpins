@@ -2743,6 +2743,9 @@ a {
   margin: 0 auto;
   align-items: baseline;
 }
+.landing--more .more-line {
+  display: none;
+}
 
 .landing--sauce {
   padding: 18rem 0 0 10rem;
@@ -3030,6 +3033,15 @@ a {
     width: unset;
     height: 16rem;
     align-items: center;
+  }
+  .landing--more .more-line {
+    display: inline-block;
+    width: 2.5rem;
+    height: 0.1rem;
+    margin: 2.5rem 0;
+  }
+  .landing--more .more-title {
+    text-align: center;
   }
 
   .landing--sauce {
