@@ -290,6 +290,26 @@
 }
 
 @media (max-width: 880px) {
+
+    .main-title {
+        font-size: 2.9rem;
+    }
+
+    .accent-red {
+        font-size: 3.1rem;
+    }
+
+    .main-subtitle {
+        font-size: 1.4rem;
+    }
+    
+    .big-title {
+        font-size: 4rem;
+    }
+ 
+}
+
+@media (max-width: 665px) {
     .main-title {
         font-size: 2.5rem;
         text-align: center;
@@ -298,7 +318,10 @@
         font-size: 2.8rem;
     }
     .main-subtitle {
-        font-size: 1.4rem;
         text-align: center;
+    }
+
+    .big-title {
+        font-size: 3.6rem;
     }
 }

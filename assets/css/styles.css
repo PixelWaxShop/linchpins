@@ -803,6 +803,23 @@ template {
 }
 @media (max-width: 880px) {
   .main-title {
+    font-size: 2.9rem;
+  }
+
+  .accent-red {
+    font-size: 3.1rem;
+  }
+
+  .main-subtitle {
+    font-size: 1.4rem;
+  }
+
+  .big-title {
+    font-size: 4rem;
+  }
+}
+@media (max-width: 665px) {
+  .main-title {
     font-size: 2.5rem;
     text-align: center;
   }
@@ -812,8 +829,11 @@ template {
   }
 
   .main-subtitle {
-    font-size: 1.4rem;
     text-align: center;
+  }
+
+  .big-title {
+    font-size: 3.6rem;
   }
 }
 .btn-oval-red {
@@ -2696,6 +2716,20 @@ a {
 .landing--sauce {
   padding: 18rem 0 0 10rem;
 }
+.landing--sauce .sauce-red-line {
+  margin: 5rem 0 4rem 10rem;
+}
+.landing--sauce .sauce-column-wrapper {
+  display: flex;
+  padding-left: 10rem;
+  padding-right: 6rem;
+}
+.landing--sauce .sauce-column-wrapper .column-left {
+  margin-right: 3rem;
+}
+.landing--sauce .sauce-column-wrapper .column-right {
+  margin-left: 3rem;
+}
 
 .full-width-img {
   background: transparent url("../images/full-image.png") no-repeat center;
@@ -2806,6 +2840,44 @@ a {
 
 @media (max-width: 880px) {
   .landing--header {
+    padding: 2rem;
+  }
+
+  .landing--more {
+    padding: 3rem 0 0 4rem;
+  }
+  .landing--more .gda-wrapper .logo-img-wrapper {
+    margin-right: 4rem;
+  }
+
+  .landing--sauce {
+    padding: 9rem 0 0 4rem;
+  }
+
+  .landing--what {
+    padding: 7rem 10rem 0 10rem;
+  }
+
+  .landing--accelerate {
+    padding: 0 5rem;
+  }
+
+  .cube-bg {
+    width: 100%;
+    height: 46rem;
+    margin: 0;
+  }
+
+  .landing--building {
+    padding: 7rem 7rem 0 7rem;
+  }
+
+  .landing--PS {
+    padding: 0 4rem;
+  }
+}
+@media (max-width: 665px) {
+  .landing--header {
     display: flex;
     justify-content: center;
     padding: 5rem;
@@ -2834,6 +2906,55 @@ a {
     width: unset;
     height: 16rem;
     align-items: center;
+  }
+
+  .landing--sauce {
+    padding: 5rem 0 0 2.5rem;
+  }
+  .landing--sauce .sauce-red-line {
+    margin: 2.5rem 0 3rem 0rem;
+    width: 3.5rem;
+  }
+  .landing--sauce .sauce-column-wrapper {
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
+    padding-right: 3rem;
+  }
+  .landing--sauce .sauce-column-wrapper .column-left {
+    margin-right: 0;
+    margin-bottom: 4rem;
+  }
+  .landing--sauce .sauce-column-wrapper .column-right {
+    margin-left: 0;
+  }
+
+  .full-width-img {
+    height: 51rem;
+    background-size: cover;
+    margin-top: 8rem;
+  }
+  .full-width-img .logo-img-wrapper {
+    height: 100%;
+  }
+  .full-width-img .logo-img-wrapper .img-lines {
+    height: 100%;
+  }
+  .full-width-img .logo-img-wrapper .logo-wrapper {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .full-width-img .logo-img-wrapper .logo-wrapper .facebook {
+    width: 16.7rem;
+    margin-bottom: 5rem;
+  }
+  .full-width-img .logo-img-wrapper .logo-wrapper .uber {
+    width: 14.2rem;
+  }
+  .full-width-img .landing--what {
+    padding: 4rem 2rem 0 2.5rem;
   }
 }
 
