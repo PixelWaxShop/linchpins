@@ -93,6 +93,30 @@
     display: flex;
     //box-shadow: 0 30px 50px -30px rgba(0, 0, 0, 0.3);
     box-shadow: 0px 40px 50px -5px rgba(0, 0, 0, 0.06);
+
+    .img-girl {
+        background: url(../images/girl-image.png);
+        background-size: cover;
+        background-position-x: right;
+        width: 35%;
+        height: 49.4rem;
+    }
+
+    .img-office {
+        background: url(../images/airbnb-image.png);
+        background-size: cover;
+        width: 65%;
+        height: 49.4rem;
+        display: flex;
+        align-items: center;
+
+        .txt-office-wrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            margin-left: 14rem;
+        }
+    }
     .txt-paragraph-airbnb {
         max-width: 40rem;
         font-family: 'Lexend Deca';
@@ -107,6 +131,23 @@
     margin: 0 auto;
     margin-top: -7rem;
     padding: 0 16rem;
+
+    .paragraph-icon-wrapper {
+        display: flex; 
+        margin-top:20rem; 
+        max-width: 64rem;
+
+        .paragraph-icon-left {
+            margin-right: 5rem;
+        }
+
+        .paragraph-icon-right {
+            margin-left: 5rem;
+        }
+    }
+
+
+
 }
 
 .cube-bg {
@@ -127,8 +168,8 @@
 }
 
 .landing--building {
-    max-width: 102.4rem;
-    margin: 0 auto;
+    //max-width: 102.4rem;
+    //margin: 0 auto;
     padding: 14rem 15rem 0 15rem;
 }
 
@@ -170,6 +211,53 @@
 .landing--PS {
     max-width: 73.6rem; //74.4rem;
     margin: 0 auto;
+
+    .PS-column-wrapper {
+        display: flex; 
+        margin-bottom: 25rem;
+
+        .PS-column-left {
+            margin-right: 4rem;
+        }
+
+        .PS-column-right {
+            margin-left: 4rem;
+        }
+    }
+}
+
+.decoration-1 {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    position: relative;
+    top: 9rem;
+    margin-top: -5.5rem;
+    height: 29.3rem;
+}
+
+
+.decoration-2 {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.decoration-3 {
+    display: flex;
+    height: 15.2rem;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-left: 11rem; margin-top: 5.5rem;
+}
+
+.decoration-4 {
+    display: flex;
+    height: 9rem;
+    justify-content: flex-end;
+    align-items: flex-start;
+    max-width: 73.6rem;
+    margin: 0 auto;
+    margin-top: -9rem;
 }
 
 @media (max-width: 880px) {
@@ -193,6 +281,15 @@
         padding: 7rem 10rem 0 10rem;
     }
 
+    .landing--airbnb {
+        .img-office {
+            justify-content: center;
+
+            .txt-office-wrapper {
+                margin-left: 0;
+            }
+        }
+    }
     .landing--accelerate {
         padding: 0 5rem;
     }
@@ -219,7 +316,7 @@
         padding: 5rem;
     }
     .landing--more {
-        padding: 0;
+        padding: 0 2rem;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -297,9 +394,101 @@
                 }
             }
         }
+    }
 
-        .landing--what {
-            padding: 4rem 2rem 0 2.5rem;
+
+
+    .landing--what {
+        padding: 4rem 2rem 0 2.5rem;
+    }
+
+    .landing--airbnb {
+        margin-top: 12rem;
+        .img-girl { 
+            display: none;
         }
+        .img-office {
+            width: 100%;
+
+            .txt-office-wrapper {
+                align-items: center;
+                padding: 0 2rem;
+            }
+            .txt-paragraph-airbnb {
+                text-align: center;
+            }
+        }
+    }
+
+    .landing--accelerate {
+        padding: 0;
+        padding-left: 2.5rem;
+        margin-top: 8rem;
+        
+        .paragraph-icon-wrapper {
+            flex-direction: column;
+            text-align: center;
+    
+            .paragraph-icon-left {
+                margin-right: 0;
+                padding-right: 2.5rem;
+            }
+    
+            .paragraph-icon-right {
+                margin-left: 0;
+                padding-right: 2.5rem;
+            }
+        }    
+    }
+
+    .landing--building {
+        padding: 10rem 2rem 0 2.5rem;
+    }
+
+    .CEO-wrapper {
+        flex-direction: column;
+        .dorota-wrapper {
+            margin-right: 0;
+        }
+        .michael-wrapper {
+            margin-left: 0;
+            align-self: flex-end;
+        }
+    }
+
+
+    .landing--PS {
+        padding: 0 2rem 0 2.5rem;
+        .PS-column-wrapper {
+            flex-direction: column;
+    
+            .PS-column-left {
+                margin-right: 0;
+            }
+    
+            .PS-column-right {
+                margin-left: 0;
+            }
+        }
+    }
+
+
+    .decoration-1 {
+        display: none;
+    }
+
+
+    .decoration-2 {
+        display: none;
+    }
+
+
+    .decoration-3 {
+        display: none;
+    }
+
+
+    .decoration-4 {
+        display: none;
     }
 }

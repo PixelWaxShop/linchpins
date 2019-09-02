@@ -817,11 +817,14 @@ template {
   .big-title {
     font-size: 4rem;
   }
+
+  .main-heading {
+    font-size: 3.8rem;
+  }
 }
 @media (max-width: 665px) {
   .main-title {
     font-size: 2.5rem;
-    text-align: center;
   }
 
   .accent-red {
@@ -834,6 +837,10 @@ template {
 
   .big-title {
     font-size: 3.6rem;
+  }
+
+  .main-heading {
+    font-size: 3rem;
   }
 }
 .btn-oval-red {
@@ -2764,6 +2771,27 @@ a {
   display: flex;
   box-shadow: 0px 40px 50px -5px rgba(0, 0, 0, 0.06);
 }
+.landing--airbnb .img-girl {
+  background: url(../images/girl-image.png);
+  background-size: cover;
+  background-position-x: right;
+  width: 35%;
+  height: 49.4rem;
+}
+.landing--airbnb .img-office {
+  background: url(../images/airbnb-image.png);
+  background-size: cover;
+  width: 65%;
+  height: 49.4rem;
+  display: flex;
+  align-items: center;
+}
+.landing--airbnb .img-office .txt-office-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 14rem;
+}
 .landing--airbnb .txt-paragraph-airbnb {
   max-width: 40rem;
   font-family: "Lexend Deca";
@@ -2777,6 +2805,17 @@ a {
   margin: 0 auto;
   margin-top: -7rem;
   padding: 0 16rem;
+}
+.landing--accelerate .paragraph-icon-wrapper {
+  display: flex;
+  margin-top: 20rem;
+  max-width: 64rem;
+}
+.landing--accelerate .paragraph-icon-wrapper .paragraph-icon-left {
+  margin-right: 5rem;
+}
+.landing--accelerate .paragraph-icon-wrapper .paragraph-icon-right {
+  margin-left: 5rem;
 }
 
 .cube-bg {
@@ -2793,8 +2832,6 @@ a {
 }
 
 .landing--building {
-  max-width: 102.4rem;
-  margin: 0 auto;
   padding: 14rem 15rem 0 15rem;
 }
 
@@ -2837,6 +2874,50 @@ a {
   max-width: 73.6rem;
   margin: 0 auto;
 }
+.landing--PS .PS-column-wrapper {
+  display: flex;
+  margin-bottom: 25rem;
+}
+.landing--PS .PS-column-wrapper .PS-column-left {
+  margin-right: 4rem;
+}
+.landing--PS .PS-column-wrapper .PS-column-right {
+  margin-left: 4rem;
+}
+
+.decoration-1 {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  position: relative;
+  top: 9rem;
+  margin-top: -5.5rem;
+  height: 29.3rem;
+}
+
+.decoration-2 {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.decoration-3 {
+  display: flex;
+  height: 15.2rem;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding-left: 11rem;
+  margin-top: 5.5rem;
+}
+
+.decoration-4 {
+  display: flex;
+  height: 9rem;
+  justify-content: flex-end;
+  align-items: flex-start;
+  max-width: 73.6rem;
+  margin: 0 auto;
+  margin-top: -9rem;
+}
 
 @media (max-width: 880px) {
   .landing--header {
@@ -2856,6 +2937,13 @@ a {
 
   .landing--what {
     padding: 7rem 10rem 0 10rem;
+  }
+
+  .landing--airbnb .img-office {
+    justify-content: center;
+  }
+  .landing--airbnb .img-office .txt-office-wrapper {
+    margin-left: 0;
   }
 
   .landing--accelerate {
@@ -2884,7 +2972,7 @@ a {
   }
 
   .landing--more {
-    padding: 0;
+    padding: 0 2rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -2953,8 +3041,88 @@ a {
   .full-width-img .logo-img-wrapper .logo-wrapper .uber {
     width: 14.2rem;
   }
-  .full-width-img .landing--what {
+
+  .landing--what {
     padding: 4rem 2rem 0 2.5rem;
+  }
+
+  .landing--airbnb {
+    margin-top: 12rem;
+  }
+  .landing--airbnb .img-girl {
+    display: none;
+  }
+  .landing--airbnb .img-office {
+    width: 100%;
+  }
+  .landing--airbnb .img-office .txt-office-wrapper {
+    align-items: center;
+    padding: 0 2rem;
+  }
+  .landing--airbnb .img-office .txt-paragraph-airbnb {
+    text-align: center;
+  }
+
+  .landing--accelerate {
+    padding: 0;
+    padding-left: 2.5rem;
+    margin-top: 8rem;
+  }
+  .landing--accelerate .paragraph-icon-wrapper {
+    flex-direction: column;
+    text-align: center;
+  }
+  .landing--accelerate .paragraph-icon-wrapper .paragraph-icon-left {
+    margin-right: 0;
+    padding-right: 2.5rem;
+  }
+  .landing--accelerate .paragraph-icon-wrapper .paragraph-icon-right {
+    margin-left: 0;
+    padding-right: 2.5rem;
+  }
+
+  .landing--building {
+    padding: 10rem 2rem 0 2.5rem;
+  }
+
+  .CEO-wrapper {
+    flex-direction: column;
+  }
+  .CEO-wrapper .dorota-wrapper {
+    margin-right: 0;
+  }
+  .CEO-wrapper .michael-wrapper {
+    margin-left: 0;
+    align-self: flex-end;
+  }
+
+  .landing--PS {
+    padding: 0 2rem 0 2.5rem;
+  }
+  .landing--PS .PS-column-wrapper {
+    flex-direction: column;
+  }
+  .landing--PS .PS-column-wrapper .PS-column-left {
+    margin-right: 0;
+  }
+  .landing--PS .PS-column-wrapper .PS-column-right {
+    margin-left: 0;
+  }
+
+  .decoration-1 {
+    display: none;
+  }
+
+  .decoration-2 {
+    display: none;
+  }
+
+  .decoration-3 {
+    display: none;
+  }
+
+  .decoration-4 {
+    display: none;
   }
 }
 
