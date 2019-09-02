@@ -2841,6 +2841,9 @@ a {
 .landing--accelerate .paragraph-icon-wrapper .paragraph-icon-right {
   margin-left: 5rem;
 }
+.landing--accelerate .paragraph-icon-wrapper .accelerate-line {
+  margin-bottom: 3.6rem;
+}
 
 .cube-bg {
   width: 73%;
