@@ -59,7 +59,8 @@ a {
         /* padding: 16rem 0 0 15rem; */
         display: flex;
         flex-direction: column;
-        padding: 0 4rem;
+        //padding: 0 4rem;
+        padding: 0 12.5rem;
     }
     .footer-input {
         background-color: #121213;
@@ -86,4 +87,21 @@ a {
         font-weight: bold;
         color: #ffffff;
     }
+}
+
+@media (max-width: 665px) { 
+
+    .footer {
+        .footer-container {
+            padding: 0 2.5rem;
+        }
+
+        .footer-input {
+            font-size: 1.9rem;
+            &::placeholder {
+                font-size: 1.9rem;
+            }
+        }
+    }
+
 }

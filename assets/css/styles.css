@@ -842,6 +842,14 @@ template {
   .main-heading {
     font-size: 3rem;
   }
+
+  .footer-title {
+    font-size: 3.2rem;
+  }
+
+  .footer-subtitle {
+    font-size: 2.7rem;
+  }
 }
 .btn-oval-red {
   border-radius: 26.5px;
@@ -904,6 +912,11 @@ template {
   opacity: 1;
 }
 
+@media (max-width: 665px) {
+  .footer-btn {
+    font-size: 2.3rem;
+  }
+}
 :root {
   --reflex-columns: 12;
   --reflex-grid-spacing: 15px;
@@ -2661,7 +2674,7 @@ a {
   /* padding: 16rem 0 0 15rem; */
   display: flex;
   flex-direction: column;
-  padding: 0 4rem;
+  padding: 0 12.5rem;
 }
 .footer .footer-input {
   background-color: #121213;
@@ -2689,6 +2702,17 @@ a {
   color: #ffffff;
 }
 
+@media (max-width: 665px) {
+  .footer .footer-container {
+    padding: 0 2.5rem;
+  }
+  .footer .footer-input {
+    font-size: 1.9rem;
+  }
+  .footer .footer-input::placeholder {
+    font-size: 1.9rem;
+  }
+}
 .landing--header {
   padding: 6.4rem;
 }
@@ -2819,7 +2843,7 @@ a {
 }
 
 .cube-bg {
-  width: 76.2rem;
+  width: 73%;
   height: 50rem;
   background-color: #fb484f;
   /* margin: 0 auto; */
@@ -2919,6 +2943,15 @@ a {
   margin-top: -9rem;
 }
 
+@media (min-width: 1024px) {
+  .landing--what {
+    padding: 15rem 0 0 0;
+  }
+
+  .landing--accelerate {
+    padding: 0;
+  }
+}
 @media (max-width: 880px) {
   .landing--header {
     padding: 2rem;

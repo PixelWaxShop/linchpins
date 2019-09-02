@@ -154,8 +154,9 @@
     //height: 45rem;
     
 
-    //width: 100%;
-    width: 76.2rem;
+    width: 73%;
+    
+    //width: 76.2rem;
     height: 50rem;
     background-color: #fb484f;
     /* margin: 0 auto; */
@@ -260,6 +261,16 @@
     margin-top: -9rem;
 }
 
+@media (min-width: 1024px) {
+
+    .landing--what {
+        padding: 15rem 0 0 0;
+    }
+
+    .landing--accelerate {
+        padding: 0;
+    }
+}
 @media (max-width: 880px) {
     .landing--header {
         padding: 2rem;
