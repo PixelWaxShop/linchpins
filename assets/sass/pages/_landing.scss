@@ -31,7 +31,6 @@
             align-items: baseline;
         }
     }
-
     .more-line {
         display: none;
     }
@@ -41,16 +40,13 @@
     //max-width: 102.4rem;
     //margin: 0 auto;
     padding: 18rem 0 0 10rem;
-
     .sauce-red-line {
         margin: 5rem 0 4rem 10rem;
     }
-
     .sauce-column-wrapper {
-        display: flex; 
-        padding-left: 10rem; 
+        display: flex;
+        padding-left: 10rem;
         padding-right: 6rem;
-
         .column-left {
             margin-right: 3rem;
         }
@@ -97,7 +93,6 @@
     display: flex;
     //box-shadow: 0 30px 50px -30px rgba(0, 0, 0, 0.3);
     box-shadow: 0px 40px 50px -5px rgba(0, 0, 0, 0.06);
-
     .img-girl {
         background: url(../images/girl-image.png);
         background-size: cover;
@@ -105,7 +100,6 @@
         width: 35%;
         height: 49.4rem;
     }
-
     .img-office {
         background: url(../images/airbnb-image.png);
         background-size: cover;
@@ -113,7 +107,6 @@
         height: 49.4rem;
         display: flex;
         align-items: center;
-
         .txt-office-wrapper {
             display: flex;
             flex-direction: column;
@@ -131,39 +124,31 @@
 }
 
 .landing--accelerate {
-    max-width: 102.4rem;
-    margin: 0 auto;
+    //max-width: 102.4rem;
+    //margin: 0 auto;
     margin-top: -7rem;
-    padding: 0 16rem;
-
+    padding: 0 15rem;
+    //padding: 14rem 15rem 0 15rem;
     .paragraph-icon-wrapper {
-        display: flex; 
-        margin-top:20rem; 
+        display: flex;
+        margin-top: 15rem;
         max-width: 64rem;
-
         .paragraph-icon-left {
             margin-right: 5rem;
         }
-
         .paragraph-icon-right {
             margin-left: 5rem;
         }
-
-        .accelerate-line {
-            margin-bottom: 3.6rem;
-        }
     }
-
-
-
+    .accelerate-line {
+        margin: 4rem 0;
+        //margin-bottom: 3.6rem;
+    }
 }
 
 .cube-bg {
     //height: 45rem;
-    
-
     width: 73%;
-    
     //width: 76.2rem;
     height: 50rem;
     background-color: #fb484f;
@@ -184,9 +169,12 @@
 
 .CEO-wrapper {
     display: flex;
-    justify-content: center;
+    //justify-content: center;
+    justify-content: space-around;
     align-items: flex-start;
     margin-top: 6rem;
+    padding: 0 15rem;
+    max-width: 144.0rem;
     .dorota-wrapper {
         margin-top: 22rem;
         margin-right: 2rem;
@@ -198,6 +186,7 @@
         display: flex;
         flex-direction: column;
         justify-content: flex-end;
+        width: 100%;
     }
     .CEO-title-wrapper {
         position: absolute;
@@ -218,17 +207,15 @@
 }
 
 .landing--PS {
-    max-width: 73.6rem; //74.4rem;
-    margin: 0 auto;
-
+    //max-width: 73.6rem; //74.4rem;
+    //margin: 0 auto;
+    padding: 0 15rem;
     .PS-column-wrapper {
-        display: flex; 
+        display: flex;
         margin-bottom: 25rem;
-
         .PS-column-left {
             margin-right: 4rem;
         }
-
         .PS-column-right {
             margin-left: 4rem;
         }
@@ -245,7 +232,6 @@
     height: 29.3rem;
 }
 
-
 .decoration-2 {
     display: flex;
     justify-content: flex-end;
@@ -256,7 +242,8 @@
     height: 15.2rem;
     justify-content: flex-start;
     align-items: flex-start;
-    padding-left: 11rem; margin-top: 5.5rem;
+    padding-left: 11rem;
+    margin-top: 5.5rem;
 }
 
 .decoration-4 {
@@ -270,15 +257,14 @@
 }
 
 @media (min-width: 1024px) {
-
     .landing--what {
         padding: 15rem 0 0 0;
     }
-
     .landing--accelerate {
-        padding: 0;
+        //padding: 0;
     }
 }
+
 @media (max-width: 880px) {
     .landing--header {
         padding: 2rem;
@@ -286,24 +272,20 @@
     .landing--more {
         padding: 3rem 0 0 4rem;
         .gda-wrapper {
-            .logo-img-wrapper { 
+            .logo-img-wrapper {
                 margin-right: 4rem;
-                }
             }
+        }
     }
-
     .landing--sauce {
         padding: 9rem 0 0 4rem;
     }
-
     .landing--what {
         padding: 7rem 10rem 0 10rem;
     }
-
     .landing--airbnb {
         .img-office {
             justify-content: center;
-
             .txt-office-wrapper {
                 margin-left: 0;
             }
@@ -312,23 +294,23 @@
     .landing--accelerate {
         padding: 0 5rem;
     }
-
     .cube-bg {
         width: 100%;
         height: 46rem;
         margin: 0;
     }
-
     .landing--building {
         padding: 7rem 7rem 0 7rem;
     }
-
+    .CEO-wrapper {
+        padding: 0 4rem;
+    }
     .landing--PS {
         padding: 0 4rem;
     }
 }
 
-@media (max-width: 665px) { 
+@media (max-width: 665px) {
     .landing--header {
         display: flex;
         justify-content: center;
@@ -357,35 +339,29 @@
                 align-items: center;
             }
         }
-
         .more-line {
             display: inline-block;
             width: 2.5rem;
             height: 0.1rem;
             margin: 2.5rem 0;
         }
-
         .more-title {
             text-align: center;
-        } 
+        }
     }
-
     .landing--sauce {
         //max-width: 102.4rem;
         //margin: 0 auto;
         padding: 5rem 0 0 2.5rem;
-
         .sauce-red-line {
             margin: 2.5rem 0 3rem 0rem;
             width: 3.5rem;
         }
-    
         .sauce-column-wrapper {
-            display: flex; 
+            display: flex;
             flex-direction: column;
-            padding-left: 0; 
+            padding-left: 0;
             padding-right: 3rem;
-    
             .column-left {
                 margin-right: 0;
                 margin-bottom: 4rem;
@@ -395,51 +371,40 @@
             }
         }
     }
-
     .full-width-img {
         height: 51rem;
         background-size: cover;
         margin-top: 8rem;
-
         .logo-img-wrapper {
             height: 100%;
-
             .img-lines {
                 height: 100%;
             }
-
             .logo-wrapper {
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
                 width: 100%;
-
                 .facebook {
                     width: 16.7rem;
                     margin-bottom: 5rem;
                 }
-
                 .uber {
                     width: 14.2rem;
                 }
             }
         }
     }
-
-
-
     .landing--what {
         padding: 4rem 2rem 0 2.5rem;
     }
-
     .landing--airbnb {
         margin-top: 12rem;
-        .img-girl { 
+        .img-girl {
             display: none;
         }
         .img-office {
             width: 100%;
-
             .txt-office-wrapper {
                 align-items: center;
                 padding: 0 2rem;
@@ -449,34 +414,33 @@
             }
         }
     }
-
     .landing--accelerate {
         padding: 0;
         padding-left: 2.5rem;
         margin-top: 8rem;
-        
         .paragraph-icon-wrapper {
             flex-direction: column;
             text-align: center;
-    
             .paragraph-icon-left {
                 margin-right: 0;
                 padding-right: 2.5rem;
             }
-    
             .paragraph-icon-right {
                 margin-left: 0;
                 padding-right: 2.5rem;
             }
-        }    
+        }
+        .accelerate-line {
+            margin: 4rem auto;
+            //margin-bottom: 3.6rem;
+        }
     }
-
     .landing--building {
         padding: 10rem 2rem 0 2.5rem;
     }
-
     .CEO-wrapper {
         flex-direction: column;
+        padding: 0;
         .dorota-wrapper {
             margin-right: 0;
         }
@@ -485,39 +449,27 @@
             align-self: flex-end;
         }
     }
-
-
     .landing--PS {
         padding: 0 2rem 0 2.5rem;
         .PS-column-wrapper {
             flex-direction: column;
-    
             .PS-column-left {
                 margin-right: 0;
             }
-    
             .PS-column-right {
                 margin-left: 0;
             }
         }
     }
-
-
     .decoration-1 {
         display: none;
     }
-
-
     .decoration-2 {
         display: none;
     }
-
-
     .decoration-3 {
         display: none;
     }
-
-
     .decoration-4 {
         display: none;
     }

@@ -2828,14 +2828,12 @@ a {
 }
 
 .landing--accelerate {
-  max-width: 102.4rem;
-  margin: 0 auto;
   margin-top: -7rem;
-  padding: 0 16rem;
+  padding: 0 15rem;
 }
 .landing--accelerate .paragraph-icon-wrapper {
   display: flex;
-  margin-top: 20rem;
+  margin-top: 15rem;
   max-width: 64rem;
 }
 .landing--accelerate .paragraph-icon-wrapper .paragraph-icon-left {
@@ -2844,8 +2842,8 @@ a {
 .landing--accelerate .paragraph-icon-wrapper .paragraph-icon-right {
   margin-left: 5rem;
 }
-.landing--accelerate .paragraph-icon-wrapper .accelerate-line {
-  margin-bottom: 3.6rem;
+.landing--accelerate .accelerate-line {
+  margin: 4rem 0;
 }
 
 .cube-bg {
@@ -2867,9 +2865,11 @@ a {
 
 .CEO-wrapper {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: flex-start;
   margin-top: 6rem;
+  padding: 0 15rem;
+  max-width: 144rem;
 }
 .CEO-wrapper .dorota-wrapper {
   margin-top: 22rem;
@@ -2882,6 +2882,7 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+  width: 100%;
 }
 .CEO-wrapper .CEO-title-wrapper {
   position: absolute;
@@ -2901,8 +2902,7 @@ a {
 }
 
 .landing--PS {
-  max-width: 73.6rem;
-  margin: 0 auto;
+  padding: 0 15rem;
 }
 .landing--PS .PS-column-wrapper {
   display: flex;
@@ -2953,10 +2953,6 @@ a {
   .landing--what {
     padding: 15rem 0 0 0;
   }
-
-  .landing--accelerate {
-    padding: 0;
-  }
 }
 @media (max-width: 880px) {
   .landing--header {
@@ -2997,6 +2993,10 @@ a {
 
   .landing--building {
     padding: 7rem 7rem 0 7rem;
+  }
+
+  .CEO-wrapper {
+    padding: 0 4rem;
   }
 
   .landing--PS {
@@ -3128,6 +3128,9 @@ a {
     margin-left: 0;
     padding-right: 2.5rem;
   }
+  .landing--accelerate .accelerate-line {
+    margin: 4rem auto;
+  }
 
   .landing--building {
     padding: 10rem 2rem 0 2.5rem;
@@ -3135,6 +3138,7 @@ a {
 
   .CEO-wrapper {
     flex-direction: column;
+    padding: 0;
   }
   .CEO-wrapper .dorota-wrapper {
     margin-right: 0;
