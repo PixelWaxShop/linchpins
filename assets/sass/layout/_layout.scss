@@ -81,6 +81,10 @@ a {
             color: rgba(255, 255, 255, 0.44);
         }
     }
+    .attach-file {
+        background: url(../images/paperclip.svg) no-repeat right center;
+        overflow: hidden;
+    }
     .logo-footer {
         font-family: 'Lexend Deca';
         font-size: 1.7rem;
@@ -89,13 +93,36 @@ a {
     }
 }
 
-@media (max-width: 665px) { 
 
+/* width */
+
+ ::-webkit-scrollbar {
+    width: 5px;
+    border-radius: 10px;
+    position: absolute;
+}
+
+
+/* Track */
+
+ ::-webkit-scrollbar-track {
+    background: #ffffff;
+    position: absolute;
+}
+
+
+/* Handle */
+
+ ::-webkit-scrollbar-thumb {
+    background: #e8ecef;
+    position: absolute;
+}
+
+@media (max-width: 665px) {
     .footer {
         .footer-container {
             padding: 0 2.5rem;
         }
-
         .footer-input {
             font-size: 1.9rem;
             &::placeholder {
@@ -103,5 +130,4 @@ a {
             }
         }
     }
-
 }

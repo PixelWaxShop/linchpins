@@ -2695,11 +2695,34 @@ a {
   font-weight: 200;
   color: rgba(255, 255, 255, 0.44);
 }
+.footer .attach-file {
+  background: url(../images/paperclip.svg) no-repeat right center;
+  overflow: hidden;
+}
 .footer .logo-footer {
   font-family: "Lexend Deca";
   font-size: 1.7rem;
   font-weight: bold;
   color: #ffffff;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+  border-radius: 10px;
+  position: absolute;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #ffffff;
+  position: absolute;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #e8ecef;
+  position: absolute;
 }
 
 @media (max-width: 665px) {
@@ -2770,7 +2793,7 @@ a {
   width: 100%;
   height: 45rem;
   background-size: cover;
-  margin-top: 12rem;
+  margin-top: 18rem;
 }
 .full-width-img .logo-img-wrapper {
   display: flex;
