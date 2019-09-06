@@ -127,8 +127,10 @@
     //max-width: 102.4rem;
     //margin: 0 auto;
     margin-top: -7rem;
-    padding: 0 15rem;
+    //padding: 0 15rem;
     //padding: 14rem 15rem 0 15rem;
+    margin-left: 15rem;
+    width: 73%;
     .paragraph-icon-wrapper {
         display: flex;
         margin-top: 15rem;
@@ -164,7 +166,10 @@
 .landing--building {
     //max-width: 102.4rem;
     //margin: 0 auto;
-    padding: 14rem 15rem 0 15rem;
+    //padding: 14rem 15rem 0 15rem;
+    padding-top: 14rem;
+    margin-left: 15rem;
+    width: 73%;
 }
 
 .CEO-wrapper {
