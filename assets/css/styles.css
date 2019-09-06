@@ -3119,8 +3119,11 @@ a {
   }
 
   .landing--accelerate {
+    margin-left: 0;
+    width: 100%;
     padding: 0;
     padding-left: 2.5rem;
+    padding-right: 2rem;
     margin-top: 8rem;
   }
   .landing--accelerate .paragraph-icon-wrapper {
@@ -3140,6 +3143,8 @@ a {
   }
 
   .landing--building {
+    margin-left: 0;
+    width: 100%;
     padding: 10rem 2rem 0 2.5rem;
   }
 

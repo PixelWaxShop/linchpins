@@ -420,8 +420,11 @@
         }
     }
     .landing--accelerate {
+        margin-left: 0;
+        width: 100%;
         padding: 0;
         padding-left: 2.5rem;
+        padding-right: 2rem;
         margin-top: 8rem;
         .paragraph-icon-wrapper {
             flex-direction: column;
@@ -441,6 +444,8 @@
         }
     }
     .landing--building {
+        margin-left: 0;
+        width: 100%;
         padding: 10rem 2rem 0 2.5rem;
     }
     .CEO-wrapper {
