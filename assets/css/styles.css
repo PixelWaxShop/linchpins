@@ -618,15 +618,15 @@ template {
 .footer-title {
   font-family: Martel;
   font-size: 4.4rem;
-  color: #ffffff;
+  color: #000000;
 }
 
 .footer-subtitle {
-  opacity: 0.47;
+  opacity: 0.82;
   font-family: Martel;
   font-size: 3.4rem;
   font-weight: 200;
-  color: #ffffff;
+  color: #000000;
 }
 
 .txt-green {
@@ -824,7 +824,7 @@ template {
 }
 @media (max-width: 665px) {
   .main-title {
-    font-size: 2.5rem;
+    font-size: 2.6rem;
   }
 
   .accent-red {
@@ -899,10 +899,10 @@ template {
   background: transparent;
   white-space: nowrap;
   cursor: pointer;
-  opacity: 0.11;
+  opacity: 0.26;
   font-family: "Lexend Deca";
   font-size: 2.9rem;
-  color: #ffffff;
+  color: #000000;
   align-self: flex-end;
 }
 .footer-btn:focus {
@@ -2665,50 +2665,70 @@ a {
 }
 
 .footer {
-  background-color: #121213;
-}
-.footer .footer-container {
-  max-width: 110.4rem;
   width: 100%;
   margin: 0 auto;
-  /* padding: 16rem 0 0 15rem; */
+  padding: 0 15rem;
   display: flex;
   flex-direction: column;
-  padding: 0 12.5rem;
 }
 .footer .footer-input {
-  background-color: #121213;
+  background-color: #ffffff;
   width: 100%;
   border: none;
   font-family: Martel;
-  font-size: 2.3rem;
+  font-size: 2.7rem;
   font-weight: 200;
   padding: 3rem 0;
   outline: none;
-  caret-color: #ffffff;
-  color: #ffffff;
-  border-bottom: 1px solid #282828;
+  caret-color: #000000;
+  color: #000000;
+  border-bottom: 1px solid #cccccc;
 }
 .footer .footer-input::placeholder {
   font-family: Martel;
-  font-size: 2.3rem;
+  font-size: 2.7rem;
   font-weight: 200;
-  color: rgba(255, 255, 255, 0.44);
+  color: #979797;
 }
 .footer .attach-file {
-  background: url(../images/paperclip.svg) no-repeat right center;
+  background: url(../images/paperclip-gray.svg) no-repeat right center;
   overflow: hidden;
 }
-.footer .logo-footer {
+.footer .bottom-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 15rem;
+  margin-bottom: 9rem;
+}
+.footer .bottom-wrapper .logo-footer {
   font-family: "Lexend Deca";
   font-size: 1.7rem;
   font-weight: bold;
-  color: #ffffff;
+  color: #000000;
+}
+.footer .bottom-wrapper .contact-phone {
+  display: none;
+  border-radius: 23.5px;
+  background-color: #fdeeee;
+  padding: 1.3rem 2.1rem;
+  align-items: center;
+}
+.footer .bottom-wrapper .contact-phone span {
+  font-family: "Lexend Deca";
+  font-size: 1.5rem;
+  color: #ff001f;
+  margin-left: 1rem;
 }
 
+@media (max-width: 880px) {
+  .footer {
+    padding: 0 4rem;
+  }
+}
 @media (max-width: 665px) {
-  .footer .footer-container {
-    padding: 0 2.5rem;
+  .footer {
+    padding: 0 2rem 0 2.5rem;
   }
   .footer .footer-input {
     font-size: 1.9rem;
@@ -2716,9 +2736,28 @@ a {
   .footer .footer-input::placeholder {
     font-size: 1.9rem;
   }
+  .footer .bottom-wrapper .contact-phone {
+    display: flex;
+  }
 }
 .landing--header {
   padding: 6.4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.landing--header .contact-phone {
+  border-radius: 23.5px;
+  background-color: #fdeeee;
+  padding: 1.3rem 2.1rem;
+  display: flex;
+  align-items: center;
+}
+.landing--header .contact-phone span {
+  font-family: "Lexend Deca";
+  font-size: 1.5rem;
+  color: #ff001f;
+  margin-left: 1rem;
 }
 
 .landing--more {
@@ -2793,9 +2832,9 @@ a {
 }
 
 .landing--what {
-  max-width: 102.4rem;
-  margin: 0 auto;
-  padding: 15rem 20rem 0 23rem;
+  margin-left: 15rem;
+  margin-top: 15rem;
+  width: 73%;
 }
 
 .landing--airbnb {
@@ -2956,11 +2995,6 @@ a {
   margin-top: -9rem;
 }
 
-@media (min-width: 1024px) {
-  .landing--what {
-    padding: 15rem 0 0 0;
-  }
-}
 @media (max-width: 880px) {
   .landing--header {
     padding: 2rem;
@@ -2978,7 +3012,9 @@ a {
   }
 
   .landing--what {
-    padding: 7rem 10rem 0 10rem;
+    padding: 0 5rem;
+    margin-left: unset;
+    width: 100%;
   }
 
   .landing--airbnb .img-office {
@@ -2990,6 +3026,8 @@ a {
 
   .landing--accelerate {
     padding: 0 5rem;
+    margin-left: unset;
+    width: 100%;
   }
 
   .cube-bg {
@@ -2999,7 +3037,9 @@ a {
   }
 
   .landing--building {
-    padding: 7rem 7rem 0 7rem;
+    padding: 7rem 4rem 0 4rem;
+    margin-left: unset;
+    width: 100%;
   }
 
   .CEO-wrapper {
@@ -3012,9 +3052,11 @@ a {
 }
 @media (max-width: 665px) {
   .landing--header {
-    display: flex;
     justify-content: center;
     padding: 5rem;
+  }
+  .landing--header .contact-phone {
+    display: none;
   }
 
   .landing--more {
@@ -3049,6 +3091,7 @@ a {
   }
   .landing--more .more-title {
     text-align: center;
+    max-width: 28rem;
   }
 
   .landing--sauce {

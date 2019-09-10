@@ -113,15 +113,15 @@
 .footer-title {
     font-family: Martel;
     font-size: 4.4rem;
-    color: #ffffff;
+    color: #000000;
 }
 
 .footer-subtitle {
-    opacity: 0.47;
+    opacity: 0.82;
     font-family: Martel;
     font-size: 3.4rem;
     font-weight: 200;
-    color: #ffffff;
+    color: #000000;
 }
 
 // text
@@ -290,33 +290,26 @@
 }
 
 @media (max-width: 880px) {
-
     .main-title {
         font-size: 2.9rem;
     }
-
     .accent-red {
         font-size: 3.1rem;
     }
-
     .main-subtitle {
         font-size: 1.4rem;
     }
-    
     .big-title {
         font-size: 4rem;
     }
-
     .main-heading {
         font-size: 3.8rem;
     }
- 
 }
 
 @media (max-width: 665px) {
     .main-title {
-        font-size: 2.5rem;
-        //text-align: center;
+        font-size: 2.6rem;
     }
     .accent-red {
         font-size: 2.8rem;
@@ -324,19 +317,15 @@
     .main-subtitle {
         text-align: center;
     }
-
     .big-title {
         font-size: 3.6rem;
     }
-
     .main-heading {
         font-size: 3rem;
     }
-
     .footer-title {
         font-size: 3.2rem;
     }
-
     .footer-subtitle {
         font-size: 2.7rem;
     }

@@ -51,57 +51,81 @@ a {
 }
 
 .footer {
-    background-color: #121213;
-    .footer-container {
-        max-width: 110.4rem;
-        width: 100%;
-        margin: 0 auto;
-        /* padding: 16rem 0 0 15rem; */
-        display: flex;
-        flex-direction: column;
-        //padding: 0 4rem;
-        padding: 0 12.5rem;
-    }
+    //max-width: 110.4rem;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15rem;
+    display: flex;
+    flex-direction: column;
     .footer-input {
-        background-color: #121213;
+        background-color: #ffffff;
         width: 100%;
         border: none;
         font-family: Martel;
-        font-size: 2.3rem;
+        font-size: 2.7rem;
         font-weight: 200;
         padding: 3rem 0;
         outline: none;
-        caret-color: #ffffff;
-        color: #ffffff;
-        border-bottom: 1px solid #282828;
+        caret-color: #000000;
+        color: #000000;
+        border-bottom: 1px solid #cccccc;
         &::placeholder {
             font-family: Martel;
-            font-size: 2.3rem;
+            font-size: 2.7rem;
             font-weight: 200;
-            color: rgba(255, 255, 255, 0.44);
+            color: #979797;
         }
     }
     .attach-file {
-        background: url(../images/paperclip.svg) no-repeat right center;
+        background: url(../images/paperclip-gray.svg) no-repeat right center;
         overflow: hidden;
     }
-    .logo-footer {
-        font-family: 'Lexend Deca';
-        font-size: 1.7rem;
-        font-weight: bold;
-        color: #ffffff;
+    .bottom-wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 15rem;
+        margin-bottom: 9rem;
+        .logo-footer {
+            font-family: 'Lexend Deca';
+            font-size: 1.7rem;
+            font-weight: bold;
+            color: #000000;
+        }
+        .contact-phone {
+            display: none;
+            border-radius: 23.5px;
+            background-color: #fdeeee;
+            padding: 1.3rem 2.1rem;
+            align-items: center;
+            span {
+                font-family: 'Lexend Deca';
+                font-size: 1.5rem;
+                color: #ff001f;
+                margin-left: 1rem;
+            }
+        }
+    }
+}
+
+@media (max-width: 880px) {
+    .footer {
+        padding: 0 4rem;
     }
 }
 
 @media (max-width: 665px) {
     .footer {
-        .footer-container {
-            padding: 0 2.5rem;
-        }
+        padding: 0 2rem 0 2.5rem;
         .footer-input {
             font-size: 1.9rem;
             &::placeholder {
                 font-size: 1.9rem;
+            }
+        }
+        .bottom-wrapper {
+            .contact-phone {
+                display: flex;
             }
         }
     }

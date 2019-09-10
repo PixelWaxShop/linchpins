@@ -2,6 +2,22 @@
     //max-width: 102.4rem;
     //margin: 0 auto;
     padding: 6.4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .contact-phone {
+        border-radius: 23.5px;
+        background-color: #fdeeee;
+        padding: 1.3rem 2.1rem;
+        display: flex;
+        align-items: center;
+        span {
+            font-family: 'Lexend Deca';
+            font-size: 1.5rem;
+            color: #ff001f;
+            margin-left: 1rem;
+        }
+    }
 }
 
 .landing--more {
@@ -82,9 +98,9 @@
 }
 
 .landing--what {
-    max-width: 102.4rem;
-    margin: 0 auto;
-    padding: 15rem 20rem 0 23rem;
+    margin-left: 15rem;
+    margin-top: 15rem;
+    width: 73%;
 }
 
 .landing--airbnb {
@@ -263,7 +279,7 @@
 
 @media (min-width: 1024px) {
     .landing--what {
-        padding: 15rem 0 0 0;
+        //padding: 15rem 0 0 0;
     }
     .landing--accelerate {
         //padding: 0;
@@ -286,7 +302,9 @@
         padding: 9rem 0 0 4rem;
     }
     .landing--what {
-        padding: 7rem 10rem 0 10rem;
+        padding: 0 5rem;
+        margin-left: unset;
+        width: 100%;
     }
     .landing--airbnb {
         .img-office {
@@ -298,6 +316,8 @@
     }
     .landing--accelerate {
         padding: 0 5rem;
+        margin-left: unset;
+        width: 100%;
     }
     .cube-bg {
         width: 100%;
@@ -305,7 +325,9 @@
         margin: 0;
     }
     .landing--building {
-        padding: 7rem 7rem 0 7rem;
+        padding: 7rem 4rem 0 4rem;
+        margin-left: unset;
+        width: 100%;
     }
     .CEO-wrapper {
         padding: 0 4rem;
@@ -317,9 +339,11 @@
 
 @media (max-width: 665px) {
     .landing--header {
-        display: flex;
         justify-content: center;
         padding: 5rem;
+        .contact-phone {
+            display: none;
+        }
     }
     .landing--more {
         padding: 0 2rem;
@@ -352,6 +376,7 @@
         }
         .more-title {
             text-align: center;
+            max-width: 28rem;
         }
     }
     .landing--sauce {
