@@ -2691,7 +2691,7 @@ a {
   color: #979797;
 }
 .footer .attach-file {
-  background: url(../images/paperclip-gray.svg) no-repeat right center;
+  background: url(../images/paperclip-gray.svg) no-repeat right bottom 4rem;
   overflow: hidden;
 }
 .footer .bottom-wrapper {
@@ -2995,6 +2995,15 @@ a {
   margin-top: -9rem;
 }
 
+.decoration-5 {
+  display: flex;
+  height: 14.9rem;
+  justify-content: flex-end;
+  align-items: flex-start;
+  margin-bottom: -10rem;
+  margin-right: 15rem;
+}
+
 @media (max-width: 880px) {
   .landing--header {
     padding: 2rem;
@@ -3175,11 +3184,12 @@ a {
   }
   .landing--accelerate .paragraph-icon-wrapper .paragraph-icon-left {
     margin-right: 0;
-    padding-right: 2.5rem;
+    padding-right: 0.5rem;
+    margin-bottom: 10rem;
   }
   .landing--accelerate .paragraph-icon-wrapper .paragraph-icon-right {
     margin-left: 0;
-    padding-right: 2.5rem;
+    padding-right: 0.5rem;
   }
   .landing--accelerate .accelerate-line {
     margin: 4rem auto;
@@ -3229,6 +3239,10 @@ a {
   }
 
   .decoration-4 {
+    display: none;
+  }
+
+  .decoration-5 {
     display: none;
   }
 }
