@@ -35,9 +35,10 @@ document.addEventListener("DOMContentLoaded", function() {
             ],
             i = 0;
         setInterval(function() {
-
-            $('#txtSwap').html(words[i = (i + 1) % words.length]);
-        }, 1000);
+            $('#txtSwap').fadeOut(function() {
+                $(this).html(words[i = (i + 1) % words.length]).fadeIn();
+            });
+        }, 2000);
 
     })();
 
