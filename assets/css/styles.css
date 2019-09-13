@@ -2790,8 +2790,8 @@ a {
   display: none;
 }
 .landing--more .tooltip-results {
-  visibility: visible;
-  opacity: 1;
+  visibility: hidden;
+  opacity: 0;
   transition: opacity 0.5s ease;
   position: absolute;
   z-index: 2;
