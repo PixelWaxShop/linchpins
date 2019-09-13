@@ -867,6 +867,7 @@ template {
   font-size: 1.5rem;
   font-weight: normal;
   white-space: nowrap;
+  display: inline-block;
 }
 .btn-oval-red:focus {
   outline: none;
@@ -893,6 +894,7 @@ template {
   font-size: 1.5rem;
   font-weight: bold;
   white-space: nowrap;
+  display: inline-block;
 }
 .btn-oval-white:focus {
   outline: none;
@@ -2803,17 +2805,18 @@ a {
   border-radius: 0.8rem;
   background-color: #ffffff;
   z-index: 1;
-  padding: 4rem 4rem 2rem 4rem;
   color: #000000;
   font-family: Martel;
   font-size: 17px;
   font-weight: 300;
   line-height: 3rem;
+  width: 30rem;
+  height: 16rem;
 }
 .landing--more .tooltip-select {
   position: absolute;
-  top: -15.5rem;
-  right: -7rem;
+  top: -16.8rem;
+  right: -9rem;
   display: flex;
   justify-content: center;
 }
@@ -2852,6 +2855,14 @@ a {
 }
 .landing--more .tab-content {
   display: none;
+  text-align: center;
+}
+.landing--more .tooltip-tab {
+  width: 8.7rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 2.5rem;
 }
 
 .landing--sauce {
@@ -3068,6 +3079,11 @@ a {
   margin-right: 15rem;
 }
 
+@media (min-width: 1024px) {
+  .landing--more .tooltip-select {
+    right: -8.5rem;
+  }
+}
 @media (max-width: 880px) {
   .landing--header {
     padding: 2rem;
@@ -3078,6 +3094,19 @@ a {
   }
   .landing--more .gda-wrapper .logo-img-wrapper {
     margin-right: 4rem;
+  }
+  .landing--more .tooltip-select {
+    top: -10.8rem;
+    right: -7.3rem;
+  }
+  .landing--more .tooltip-results {
+    font-size: 1.4rem;
+    line-height: 2.2rem;
+    width: 24rem;
+    height: 10rem;
+  }
+  .landing--more .tooltip-tab {
+    margin-top: 1.5rem;
   }
 
   .landing--sauce {
@@ -3165,6 +3194,13 @@ a {
   .landing--more .more-title {
     text-align: center;
     max-width: 28rem;
+  }
+  .landing--more .show-tooltip {
+    cursor: pointer;
+  }
+  .landing--more .show-tooltip:hover ~ .tooltip-results {
+    visibility: hidden;
+    opacity: 0;
   }
 
   .landing--sauce {

@@ -11,14 +11,14 @@ document.addEventListener("DOMContentLoaded", function() {
             current_tab++;
         }
 
-        $('#tab' + current_tab).show().siblings().hide();
+        $('.tab' + current_tab).show().siblings().hide();
         $('.tooltip-tab').show();
 
         tablinks = document.getElementsByClassName("tab");
         for (i = 0; i < tablinks.length; i++) {
             tablinks[i].className = tablinks[i].className.replace(" active", "");
         }
-        $('#btn' + current_tab).addClass('active');
+        $('.btn' + current_tab).addClass('active');
 
         // Change/remove current tab to active      $('#tab'+current_tab).parent('li').addClass('active').siblings().removeClass('active');
 

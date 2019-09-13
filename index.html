@@ -30,32 +30,61 @@
         display: inline-block;">Most business leaders want <span class="accent-red show-tooltip">more.</span>
             <!-- Tooltip -->
             <div class="tooltip-results tooltip-select">
-                <div>
-                    <div id="tab1" class="tab-content" style="display: block;">
+                <div style="display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;">
+                    <div class="tab-content tab1" style="display: block;">
                         Do big things, not just <br>Think of big things.
                     </div>
-                    <div id="tab2" class="tab-content">
+                    <div class="tab-content tab2">
                         Run an organization that <br>Thrives, not just Exists.
                     </div>
-                    <div id="tab3" class="tab-content">
-                        Say No to No - <br>Be the saving hero for ideas stuck in tomorrowland.
+                    <div class="tab-content tab3">
+                        Be the saving hero for ideas <br>stuck in tomorrowland.
                     </div>
 
                     <div class="tooltip-tab">
-                        <button id="btn1" class="tab active" onclick="openTab(event, 'tab1')"></button>
-                        <button id="btn2" class="tab" onclick="openTab(event, 'tab2')"></button>
-                        <button id="btn3" class="tab" onclick="openTab(event, 'tab3')"></button>
+                        <button id="btn1" class="tab btn1 active" onclick="openTab(event, 'tab1')"></button>
+                        <button id="btn2" class="tab btn2" onclick="openTab(event, 'tab2')"></button>
+                        <button id="btn3" class="tab btn3" onclick="openTab(event, 'tab3')"></button>
                     </div>
                 </div>
             </div>
             <!-- Tooltip -->
         </h1>
         <div class="red-line-small more-line"></div>
-        <h1 class="main-title more-title">We are a growth team dedicated to <span class="accent-red">more.</span></h1>
+        <h1 class="main-title more-title" style="position: relative;
+        display: inline-block;">We are a growth team dedicated to <span class="accent-red show-tooltip">more.</span>
+            <!-- Tooltip -->
+            <div class="tooltip-results tooltip-select">
+                <div style="display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;">
+                    <div class="tab-content tab1" style="display: block;">
+                        Do big things, not just <br>Think of big things.
+                    </div>
+                    <div class="tab-content tab2">
+                        Run an organization that <br>Thrives, not just Exists.
+                    </div>
+                    <div class="tab-content tab3">
+                        Be the saving hero for ideas <br>stuck in tomorrowland.
+                    </div>
+
+                    <div class="tooltip-tab">
+                        <button id="btn1" class="tab btn1 active" onclick="openTab(event, 'tab1')"></button>
+                        <button id="btn2" class="tab btn2" onclick="openTab(event, 'tab2')"></button>
+                        <button id="btn3" class="tab btn3" onclick="openTab(event, 'tab3')"></button>
+                    </div>
+                </div>
+            </div>
+            <!-- Tooltip -->
+        </h1>
 
         <h2 class="main-subtitle" style="margin-top: 4rem;">Together, we identify what is, give voice to what could be and then do the work.</h2>
         <h3 class="accent-black" style="margin-top: 0.5rem;">5% Talk, 95% Action.</h3>
-        <button class="btn-oval-red" style="margin-top: 6rem;">Get in Touch</button>
+        <a href="#contact" class="btn-oval-red" style="margin-top: 6rem;">Get in Touch</a>
 
         <div class="gda-wrapper">
             <div class="logo-img-wrapper">
@@ -130,8 +159,9 @@
     </section>
 
     <section class="landing--accelerate">
-        <h1 class="main-heading" style="margin-bottom: 5.5rem; max-width: 60rem;">Accelerate launching of new ideas to accelerate growth</h1>
-        <p class="txt-paragraph-big">We are a team of <span id="txtSwap" class="txt-bold">creators</span> passionate about helping organizations not just THINK big but also DO big, unique, and dare we say transformative things.</p>
+        <h1 class="main-heading" style="margin-bottom: 3rem; max-width: 60rem;">Accelerate launching of new ideas to accelerate growth</h1>
+        <p class="txt-paragraph-big">Who are we? We are a team of <span id="txtSwap" class="txt-bold">creators</span></p><br><br>
+        <p class="txt-paragraph-big">We are passionate about helping organizations not just THINK big but also DO big, unique and dare we say transformative things.</p>
         <div class="red-line-small accelerate-line"></div>
         <p class="txt-paragraph-big">We believe in the power of agile, confident people with a diverse mix of skills, knowledge and expertise, united over a single purpose – meaningful work.</p>
 
@@ -350,7 +380,7 @@
         <img style="align-self: flex-end;" src="assets/images/dot-grid-contact.svg">
         <img src="assets/images/noise-block-contact.png">
     </section>
-    <footer class="footer">
+    <footer id="contact" class="footer">
         <h1 class="footer-title" style="margin-bottom: 1rem;">Got a Project?</h1>
         <h2 class="footer-subtitle" style="margin-bottom: 2rem;">Let’s Talk</h2>
         <input class="footer-input" placeholder="Your fancy email?">

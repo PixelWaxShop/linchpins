@@ -60,17 +60,18 @@
         border-radius: 0.8rem;
         background-color: #ffffff;
         z-index: 1;
-        padding: 4rem 4rem 2rem 4rem;
         color: #000000;
         font-family: Martel;
         font-size: 17px;
         font-weight: 300;
         line-height: 3rem;
+        width: 30rem;
+        height: 16rem;
     }
     .tooltip-select {
         position: absolute;
-        top: -15.5rem;
-        right: -7rem;
+        top: -16.8rem;
+        right: -9rem;
         display: flex;
         justify-content: center;
         &:after {
@@ -79,7 +80,6 @@
             /* reduce the damage in FF3.0 */
             position: absolute;
             bottom: -1rem;
-            //left: 50px;
             width: 0;
             height: 0;
             border-style: solid;
@@ -110,6 +110,14 @@
     }
     .tab-content {
         display: none;
+        text-align: center;
+    }
+    .tooltip-tab {
+        width: 8.7rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 2.5rem;
     }
 }
 
@@ -354,6 +362,11 @@
     .landing--accelerate {
         //padding: 0;
     }
+    .landing--more {
+        .tooltip-select {
+            right: -8.5rem;
+        }
+    }
 }
 
 @media (max-width: 880px) {
@@ -366,6 +379,19 @@
             .logo-img-wrapper {
                 margin-right: 4rem;
             }
+        }
+        .tooltip-select {
+            top: -10.8rem;
+            right: -7.3rem;
+        }
+        .tooltip-results {
+            font-size: 1.4rem;
+            line-height: 2.2rem;
+            width: 24rem;
+            height: 10rem;
+        }
+        .tooltip-tab {
+            margin-top: 1.5rem;
         }
     }
     .landing--sauce {
@@ -447,6 +473,13 @@
         .more-title {
             text-align: center;
             max-width: 28rem;
+        }
+        .show-tooltip {
+            cursor: pointer;
+            &:hover~.tooltip-results {
+                visibility: hidden;
+                opacity: 0;
+            }
         }
     }
     .landing--sauce {
