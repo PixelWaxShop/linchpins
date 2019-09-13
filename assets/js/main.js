@@ -24,6 +24,23 @@ document.addEventListener("DOMContentLoaded", function() {
 
     }, 5000);
 
+
+
+    (function() {
+        var words = [
+                'creators',
+                'thinkers',
+                'innovators',
+                'doers'
+            ],
+            i = 0;
+        setInterval(function() {
+
+            $('#txtSwap').html(words[i = (i + 1) % words.length]);
+        }, 500);
+
+    })();
+
 });
 
 function openTab(evt, tabName) {
