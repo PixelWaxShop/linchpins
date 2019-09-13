@@ -37,7 +37,7 @@ document.addEventListener("DOMContentLoaded", function() {
         setInterval(function() {
 
             $('#txtSwap').html(words[i = (i + 1) % words.length]);
-        }, 500);
+        }, 1000);
 
     })();
 
