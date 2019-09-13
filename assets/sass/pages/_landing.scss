@@ -369,6 +369,18 @@
     }
 }
 
+@media (max-width: 940px) {
+    .landing--more {
+        .show-tooltip {
+            cursor: pointer;
+            &:hover~.tooltip-results {
+                visibility: hidden;
+                opacity: 0;
+            }
+        }
+    }
+}
+
 @media (max-width: 880px) {
     .landing--header {
         padding: 2rem;
@@ -379,19 +391,6 @@
             .logo-img-wrapper {
                 margin-right: 4rem;
             }
-        }
-        .tooltip-select {
-            top: -10.8rem;
-            right: -7.3rem;
-        }
-        .tooltip-results {
-            font-size: 1.4rem;
-            line-height: 2.2rem;
-            width: 24rem;
-            height: 10rem;
-        }
-        .tooltip-tab {
-            margin-top: 1.5rem;
         }
     }
     .landing--sauce {
@@ -473,13 +472,6 @@
         .more-title {
             text-align: center;
             max-width: 28rem;
-        }
-        .show-tooltip {
-            cursor: pointer;
-            &:hover~.tooltip-results {
-                visibility: hidden;
-                opacity: 0;
-            }
         }
     }
     .landing--sauce {

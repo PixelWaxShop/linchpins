@@ -3084,6 +3084,15 @@ a {
     right: -8.5rem;
   }
 }
+@media (max-width: 940px) {
+  .landing--more .show-tooltip {
+    cursor: pointer;
+  }
+  .landing--more .show-tooltip:hover ~ .tooltip-results {
+    visibility: hidden;
+    opacity: 0;
+  }
+}
 @media (max-width: 880px) {
   .landing--header {
     padding: 2rem;
@@ -3094,19 +3103,6 @@ a {
   }
   .landing--more .gda-wrapper .logo-img-wrapper {
     margin-right: 4rem;
-  }
-  .landing--more .tooltip-select {
-    top: -10.8rem;
-    right: -7.3rem;
-  }
-  .landing--more .tooltip-results {
-    font-size: 1.4rem;
-    line-height: 2.2rem;
-    width: 24rem;
-    height: 10rem;
-  }
-  .landing--more .tooltip-tab {
-    margin-top: 1.5rem;
   }
 
   .landing--sauce {
@@ -3194,13 +3190,6 @@ a {
   .landing--more .more-title {
     text-align: center;
     max-width: 28rem;
-  }
-  .landing--more .show-tooltip {
-    cursor: pointer;
-  }
-  .landing--more .show-tooltip:hover ~ .tooltip-results {
-    visibility: hidden;
-    opacity: 0;
   }
 
   .landing--sauce {
