@@ -50,6 +50,67 @@
     .more-line {
         display: none;
     }
+    .tooltip-results {
+        visibility: visible;
+        opacity: 1;
+        transition: opacity 0.5s ease;
+        position: absolute;
+        z-index: 2;
+        box-shadow: 0 7px 29px -9px rgba(0, 0, 0, 0.17);
+        border-radius: 0.8rem;
+        background-color: #ffffff;
+        z-index: 1;
+        padding: 4rem 4rem 2rem 4rem;
+        color: #000000;
+        font-family: Martel;
+        font-size: 17px;
+        font-weight: 300;
+        line-height: 3rem;
+    }
+    .tooltip-select {
+        position: absolute;
+        top: -15.5rem;
+        right: -7rem;
+        display: flex;
+        justify-content: center;
+        &:after {
+            content: "";
+            display: block;
+            /* reduce the damage in FF3.0 */
+            position: absolute;
+            bottom: -1rem;
+            //left: 50px;
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 10px 10px 0 10px;
+            border-color: #ffffff transparent transparent transparent;
+        }
+    }
+    .show-tooltip {
+        cursor: pointer;
+        &:hover~.tooltip-results {
+            visibility: visible;
+            transition: opacity 0.5s ease;
+            opacity: 1;
+        }
+    }
+    .tab {
+        border: none;
+        outline: none;
+        width: 25px;
+        height: 2px;
+        background-color: #e6e2e2;
+        cursor: pointer;
+    }
+    .active {
+        width: 25px;
+        height: 2px;
+        background-color: #ff4740;
+    }
+    .tab-content {
+        display: none;
+    }
 }
 
 .landing--sauce {

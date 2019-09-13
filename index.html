@@ -26,7 +26,30 @@
         </div>
     </header>
     <section class="landing--more">
-        <h1 class="main-title more-title">Most business leaders want <span class="accent-red">more.</span></h1>
+        <h1 class="main-title more-title" style="position: relative;
+        display: inline-block;">Most business leaders want <span class="accent-red show-tooltip">more.</span>
+            <!-- Tooltip -->
+            <div class="tooltip-results tooltip-select">
+                <div>
+                    <div id="tab1" class="tab-content" style="display: block;">
+                        Do big things, not just <br>Think of big things.
+                    </div>
+                    <div id="tab2" class="tab-content">
+                        Run an organization that <br>Thrives, not just Exists.
+                    </div>
+                    <div id="tab3" class="tab-content">
+                        Say No to No - <br>Be the saving hero for ideas stuck in tomorrowland.
+                    </div>
+
+                    <div class="tooltip-tab">
+                        <button id="btn1" class="tab active" onclick="openTab(event, 'tab1')"></button>
+                        <button id="btn2" class="tab" onclick="openTab(event, 'tab2')"></button>
+                        <button id="btn3" class="tab" onclick="openTab(event, 'tab3')"></button>
+                    </div>
+                </div>
+            </div>
+            <!-- Tooltip -->
+        </h1>
         <div class="red-line-small more-line"></div>
         <h1 class="main-title more-title">We are a growth team dedicated to <span class="accent-red">more.</span></h1>
 
