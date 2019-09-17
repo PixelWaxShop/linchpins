@@ -3227,6 +3227,7 @@ a {
   }
 
   .full-width-img {
+    background: transparent url("../images/full-image.png") no-repeat left;
     height: 51rem;
     background-size: cover;
     margin-top: 8rem;
