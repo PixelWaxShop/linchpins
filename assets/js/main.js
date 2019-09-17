@@ -28,10 +28,10 @@ document.addEventListener("DOMContentLoaded", function() {
 
     (function() {
         var words = [
-                'creators',
-                'thinkers',
-                'innovators',
-                'doers'
+                'creators.',
+                'thinkers.',
+                'innovators.',
+                'doers.'
             ],
             i = 0;
         setInterval(function() {

@@ -2705,7 +2705,7 @@ a {
   justify-content: space-between;
   align-items: center;
   margin-top: 15rem;
-  margin-bottom: 9rem;
+  margin-bottom: 11.4rem;
 }
 .footer .bottom-wrapper .logo-footer {
   font-family: "Lexend Deca";
@@ -2726,6 +2726,16 @@ a {
   color: #ff001f;
   margin-left: 1rem;
 }
+.footer .bottom-wrapper .contact-phone-black {
+  display: flex;
+  align-items: center;
+}
+.footer .bottom-wrapper .contact-phone-black span {
+  font-family: "Lexend Deca";
+  font-size: 1.4rem;
+  color: #000000;
+  margin-left: 1rem;
+}
 
 @media (max-width: 880px) {
   .footer {
@@ -2744,6 +2754,9 @@ a {
   }
   .footer .bottom-wrapper .contact-phone {
     display: flex;
+  }
+  .footer .bottom-wrapper .contact-phone-black {
+    display: none;
   }
 }
 .landing--header {
