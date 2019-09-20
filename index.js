@@ -1,15 +1,3 @@
-/* const sendmail = require('sendmail')();
-
-sendmail({
-    from: 'no-reply@yourdomain.com',
-    to: 'mirna.miskovic@gmail.com',
-    subject: 'test sendmail',
-    html: 'Mail of test sendmail ',
-  }, function(err, reply) {
-    console.log(err && err.stack);
-    console.dir(reply);
-});
- */
 let express = require("express"),
     path = require('path'),
     nodeMailer = require('nodemailer'),
@@ -17,41 +5,42 @@ let express = require("express"),
 
 let app = express();
 
+// We need to only do this once at start
+const transporter = nodeMailer.createTransport({
+  host: 'smtp.gmail.com',
+  port: 465,
+  secure: true,
+  auth: {
+    // should be replaced with real sender's account
+    user: 'pixel.wax.shop@gmail.com',
+    pass: 'linchpinspass123'
+  }
+});
+
 app.use(express.static('public'));
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
 app.post('/send-email', function(req, res) {
-    console.log(req);
-    let transporter = nodeMailer.createTransport({
-        host: 'smtp.gmail.com',
-        port: 465,
-        secure: true,
-        auth: {
-            // should be replaced with real sender's account
-            user: 'pixel.wax.shop@gmail.com',
-            pass: 'linchpinspass123'
-        }
-    });
     let mailOptions = {
-        // should be replaced with real recipient's account
-        to: ['pixel.wax.shop@gmail.com', 'irtacreative@gmail.com', 'mvitale@linchpins.com', 'dorota@linchpins.com'],
-        subject: req.body.email,
-        text: req.body.message,
-        /*attachments: [{
-            // file on disk as an attachment
-            filename: req.body.file,
-            path: './public/assets/images/airbnb-image.png' //req.body.file.path // stream this file
-        }]*/
+      to: ['pixel.wax.shop@gmail.com', 'irtacreative@gmail.com', 'mvitale@linchpins.com', 'dorota@linchpins.com'],
+      subject: `Enquiery ${Date.now()}`,
+      html: `User has sent an enquiery. <br/>Name: ${req.body.name}<br/>Email: ${req.body.email}<br/>Message: ${req.body.message}`,
     };
-    transporter.sendMail(mailOptions, (error, info) => {
+
+    transporter.sendMail(mailOptions, (error) => {
         if (error) {
-            return console.log(error);
+            //return error to client
+            res.writeHead(500);
+            res.end();
+            return console.error(error);
+
         }
-        console.log('Message %s sent: %s', info.messageId, info.response);
     });
-    res.writeHead(301, { Location: 'index.html' });
+
+    // We can just return 200 here so we know request was success
+    res.writeHead(200);
     res.end();
 });
 

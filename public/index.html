@@ -381,11 +381,13 @@
         <img src="assets/images/noise-block-contact.png">
     </section>
     <footer id="contact">
-        <form role="form" action="/send-email" method="post" class="footer">
+        <form role="form" action="/send-email" method="post" class="footer" id="contact-form">
             <h1 class="footer-title" style="margin-bottom: 1rem;">Got a Project?</h1>
             <h2 class="footer-subtitle" style="margin-bottom: 2rem;">Let’s Talk</h2>
             <input class="footer-input" placeholder="Your fancy email?" id="email" name="email" required>
-            <input class="footer-input" placeholder="Your name?">
+            <div id="email-required" class="validation hidden">Please enter email</div>
+            <input class="footer-input" placeholder="Your name?" name="name">
+            <div id="name-required" class="validation hidden">Please enter a name</div>
             <textarea class="footer-input attach-file" placeholder="Your message" rows="1" id="message" name="message" required></textarea>
             <!-- <div class="image-upload">
                 <label for="file">
@@ -393,8 +395,12 @@
                 </label>
                 <input id="file" name="file" type="file" />
             </div>-->
-            <button class="trigger footer-btn" style="margin-top: 5rem;" type="submit" id="submit" name="submit">Send</button>
+            <div id="message-required" class="validation hidden">Please enter a message</div>
+            <button class="trigger footer-btn" style="margin-top: 5rem;" type="button" id="submit" name="submit">Send</button>
         </form>
+        <div id="form-success" class="hidden">
+          Thank you! We'll be in touch.
+        </div>
         <div class="bottom-wrapper">
             <h3 class="logo-footer">linchpins</h3>
             <div class="contact-phone">
@@ -414,6 +420,59 @@
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
         AOS.init();
+    </script>
+
+    <script>
+      const defaultFields = ['email', 'name', 'message']
+
+      // Helper for fetching element by field name
+      const getJQfield = key => $('[name="' + key + '"]')
+
+      function validate(fieldsToValidate) {
+        let isValid = true;
+
+        //if no fields are provided then use default ones - validate all of them
+        const fields = fieldsToValidate || defaultFields
+
+        fields.forEach(key => {
+          const field = getJQfield(key)
+          const val = field.val()
+
+          isValid = isValid && val
+
+          const validationDiv = $('#' + key + '-required')
+
+          if(val) {
+            validationDiv.addClass('hidden')
+          } else {
+            validationDiv.removeClass('hidden')
+          }
+        })
+
+        return isValid
+      }
+
+      defaultFields.forEach(field =>
+        getJQfield(field).on('blur', () => validate([field]))
+      )
+
+      $('#submit').on('click', function(e) {
+        //Validate form before submiting
+        const isValid = validate()
+
+        if(isValid) {
+          // send AJAX request
+          $.post('/send-email', {
+            email: getJQfield('email').val(),
+            name: getJQfield('name').val(),
+            message: getJQfield('message').val()
+          }, () => {
+            // On success hide form and show msg
+            $('#contact-form').addClass("hidden")
+            $('#form-success').removeClass("hidden")
+          })
+        }
+      })
     </script>
 
 </body>
