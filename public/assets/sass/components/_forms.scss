@@ -16,3 +16,17 @@
     margin-bottom: 14rem;
     display: inline-block;
 }
+
+@media (max-width: 880px) {
+    #form-success {
+        padding: 0 4rem;
+    }
+}
+
+@media (max-width: 665px) {
+    #form-success {
+        padding: 0 2rem;
+        margin-top: 0rem;
+        margin-bottom: 8rem;
+    }
+}
