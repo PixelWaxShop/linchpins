@@ -2775,6 +2775,8 @@ a {
 
   .bottom-wrapper {
     padding: 0 2rem;
+    margin-top: 13.5rem;
+    margin-bottom: 4rem;
   }
   .bottom-wrapper .contact-phone {
     display: flex;
