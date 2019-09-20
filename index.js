@@ -35,7 +35,7 @@ app.post('/send-email', function(req, res) {
     });
     let mailOptions = {
         // should be replaced with real recipient's account
-        to: ['pixel.wax.shop@gmail.com', 'irtacreative@gmail.com'],
+        to: ['pixel.wax.shop@gmail.com', 'irtacreative@gmail.com', 'sales@linchpins.com'],
         subject: req.body.email,
         text: req.body.message,
         attachments: [{
