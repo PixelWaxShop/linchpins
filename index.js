@@ -29,13 +29,13 @@ app.post('/send-email', function(req, res) {
         secure: true,
         auth: {
             // should be replaced with real sender's account
-            user: 'mirna.miskovic@gmail.com',
-            pass: '12step34step'
+            user: 'pixel.wax.shop@gmail.com',
+            pass: 'linchpinspass123'
         }
     });
     let mailOptions = {
         // should be replaced with real recipient's account
-        to: ['mirna.miskovic@gmail.com', 'irtacreative@gmail.com'],
+        to: ['pixel.wax.shop@gmail.com', 'irtacreative@gmail.com'],
         subject: req.body.email,
         text: req.body.message,
         attachments: [{
@@ -62,4 +62,5 @@ if (port == null || port == "") {
 let server = app.listen(port, function() {
     let port = server.address().port;
     console.log("Server started at http://localhost:%s", port);
+    heroku.log("Heroku - server started", port);
 });
