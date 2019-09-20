@@ -381,12 +381,14 @@
         <img src="assets/images/noise-block-contact.png">
     </section>
     <footer id="contact" class="footer">
-        <h1 class="footer-title" style="margin-bottom: 1rem;">Got a Project?</h1>
-        <h2 class="footer-subtitle" style="margin-bottom: 2rem;">Let’s Talk</h2>
-        <input class="footer-input" placeholder="Your fancy email?">
-        <input class="footer-input" placeholder="Your name?">
-        <textarea class="footer-input attach-file" placeholder="Your message" rows="1"></textarea>
-        <button class="footer-btn" style="margin-top: 5rem;">Send</button>
+        <form role="form" action="/send-email" method="post">
+            <h1 class="footer-title" style="margin-bottom: 1rem;">Got a Project?</h1>
+            <h2 class="footer-subtitle" style="margin-bottom: 2rem;">Let’s Talk</h2>
+            <input class="footer-input" placeholder="Your fancy email?">
+            <input class="footer-input" placeholder="Your name?">
+            <textarea class="footer-input attach-file" placeholder="Your message" rows="1"></textarea>
+            <button class="footer-btn" style="margin-top: 5rem;" type="submit">Send</button>
+        </form>
         <div class="bottom-wrapper">
             <h3 class="logo-footer">linchpins</h3>
             <div class="contact-phone">
