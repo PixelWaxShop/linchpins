@@ -41,7 +41,7 @@ app.post('/send-email', function(req, res) {
         attachments: [{
             // file on disk as an attachment
             filename: req.body.file,
-            path: new Buffer(req.body.file.filename) // stream this file
+            path: req.body.file.filename // stream this file
         }]
     };
     transporter.sendMail(mailOptions, (error, info) => {
