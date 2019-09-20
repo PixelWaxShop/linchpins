@@ -23,6 +23,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
 app.post('/send-email', function(req, res) {
+    console.log(req);
     let transporter = nodeMailer.createTransport({
         host: 'smtp.gmail.com',
         port: 465,
@@ -35,14 +36,14 @@ app.post('/send-email', function(req, res) {
     });
     let mailOptions = {
         // should be replaced with real recipient's account
-        to: ['pixel.wax.shop@gmail.com', 'irtacreative@gmail.com', 'sales@linchpins.com'],
+        to: ['pixel.wax.shop@gmail.com', 'irtacreative@gmail.com', 'mvitale@linchpins.com', 'dorota@linchpins.com'],
         subject: req.body.email,
         text: req.body.message,
-        attachments: [{
+        /*attachments: [{
             // file on disk as an attachment
             filename: req.body.file,
-            path: req.body.file.filename // stream this file
-        }]
+            path: './public/assets/images/airbnb-image.png' //req.body.file.path // stream this file
+        }]*/
     };
     transporter.sendMail(mailOptions, (error, info) => {
         if (error) {

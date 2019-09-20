@@ -2757,6 +2757,10 @@ a {
   .footer {
     padding: 0 4rem;
   }
+
+  .bottom-wrapper {
+    padding: 0 4rem;
+  }
 }
 @media (max-width: 665px) {
   .footer {
@@ -2768,10 +2772,14 @@ a {
   .footer .footer-input::placeholder {
     font-size: 1.9rem;
   }
-  .footer .bottom-wrapper .contact-phone {
+
+  .bottom-wrapper {
+    padding: 0 2rem;
+  }
+  .bottom-wrapper .contact-phone {
     display: flex;
   }
-  .footer .bottom-wrapper .contact-phone-black {
+  .bottom-wrapper .contact-phone-black {
     display: none;
   }
 }

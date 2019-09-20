@@ -138,6 +138,9 @@ a {
     .footer {
         padding: 0 4rem;
     }
+    .bottom-wrapper {
+        padding: 0 4rem;
+    }
 }
 
 @media (max-width: 665px) {
@@ -149,13 +152,14 @@ a {
                 font-size: 1.9rem;
             }
         }
-        .bottom-wrapper {
-            .contact-phone {
-                display: flex;
-            }
-            .contact-phone-black {
-                display: none;
-            }
+    }
+    .bottom-wrapper {
+        padding: 0 2rem;
+        .contact-phone {
+            display: flex;
+        }
+        .contact-phone-black {
+            display: none;
         }
     }
 }
