@@ -7,26 +7,26 @@ let app = express();
 
 // We need to only do this once at start
 const transporter = nodeMailer.createTransport({
-  host: 'smtp.gmail.com',
-  port: 465,
-  secure: true,
-  auth: {
-    // should be replaced with real sender's account
-    user: 'pixel.wax.shop@gmail.com',
-    pass: 'linchpinspass123'
-  }
+    host: 'smtp.gmail.com',
+    port: 465,
+    secure: true,
+    auth: {
+        // should be replaced with real sender's account
+        user: 'pixel.wax.shop@gmail.com',
+        pass: 'linchpinspass123'
+    }
 });
 
 app.use(express.static('public'));
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
-
+let newDate = new Date(Date.now());
 app.post('/send-email', function(req, res) {
     let mailOptions = {
-      to: ['pixel.wax.shop@gmail.com', 'irtacreative@gmail.com', 'mvitale@linchpins.com', 'dorota@linchpins.com'],
-      subject: `Enquiery ${Date.now()}`,
-      html: `User has sent an enquiery. <br/>Name: ${req.body.name}<br/>Email: ${req.body.email}<br/>Message: ${req.body.message}`,
+        to: ['pixel.wax.shop@gmail.com', 'irtacreative@gmail.com', 'mvitale@linchpins.com', 'dorota@linchpins.com'],
+        subject: `Inquiry ${newDate}`,
+        html: `User has sent an inquiry. <br/>Name: ${req.body.name}<br/>Email: ${req.body.email}<br/>Message: ${req.body.message}`,
     };
 
     transporter.sendMail(mailOptions, (error) => {

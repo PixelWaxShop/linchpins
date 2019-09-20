@@ -1,14 +1,18 @@
 .validation {
-  margin-top: 6px;
-  color: red;
+    margin-top: 0.6rem;
+    color: red;
+    text-align: right;
 }
 
 .hidden {
-  display: none!important;
+    display: none!important;
 }
 
 #form-success {
-  text-align: center;
-  color: #aaa;
-  font-size: 36px;
+    text-align: left;
+    font-size: 3.6rem;
+    padding: 0 15rem;
+    margin-top: 25rem;
+    margin-bottom: 14rem;
+    display: inline-block;
 }
