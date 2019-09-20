@@ -62,5 +62,4 @@ if (port == null || port == "") {
 let server = app.listen(port, function() {
     let port = server.address().port;
     console.log("Server started at http://localhost:%s", port);
-    heroku.log("Heroku - server started", port);
 });
