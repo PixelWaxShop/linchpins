@@ -54,7 +54,12 @@ app.post('/send-email', function(req, res) {
     res.end();
 });
 
-let server = app.listen(8081, function() {
+let port = process.env.PORT;
+if (port == null || port == "") {
+    port = 8000;
+}
+
+let server = app.listen(port, function() {
     let port = server.address().port;
     console.log("Server started at http://localhost:%s", port);
 });
